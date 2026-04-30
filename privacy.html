@@ -4,33 +4,27 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>FamilyMedVault 隐私政策</title>
-    <meta name="description" content="FamilyMedVault 隐私政策（个人健康资料管理应用）" />
+    <meta name="description" content="FamilyMedVault 隐私政策（个人与家庭健康资料管理应用）" />
     <style>
       :root { color-scheme: light dark; }
-      body {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC",
-          "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-        line-height: 1.6;
-        max-width: 920px;
-        margin: 0 auto;
-        padding: 24px;
+      body{
+        font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+        line-height:1.7;max-width:980px;margin:0 auto;padding:24px
       }
-      header { margin-bottom: 16px; }
-      h1 { font-size: 28px; margin: 0 0 8px; }
-      .meta { color: #666; font-size: 14px; }
-      h2 { font-size: 20px; margin-top: 28px; }
-      h3 { font-size: 16px; margin-top: 18px; }
-      code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
-      a { color: inherit; }
-      ul { padding-left: 20px; }
-      .card {
-        border: 1px solid rgba(127,127,127,.25);
-        border-radius: 12px;
-        padding: 14px 16px;
-        margin: 14px 0;
-      }
-      .small { font-size: 13px; opacity: .85; }
-      footer { margin-top: 36px; padding-top: 16px; border-top: 1px solid rgba(127,127,127,.25); }
+      header{margin-bottom:16px}
+      h1{font-size:28px;margin:0 0 8px}
+      .meta{color:#666;font-size:14px}
+      h2{font-size:20px;margin-top:28px}
+      h3{font-size:16px;margin-top:18px}
+      ul{padding-left:20px}
+      a{color:inherit}
+      code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace}
+      .card{border:1px solid rgba(127,127,127,.25);border-radius:12px;padding:14px 16px;margin:14px 0}
+      .small{font-size:13px;opacity:.85}
+      footer{margin-top:36px;padding-top:16px;border-top:1px solid rgba(127,127,127,.25)}
+      table{border-collapse:collapse;width:100%;margin:10px 0}
+      th,td{border:1px solid rgba(127,127,127,.25);padding:10px;vertical-align:top}
+      th{background:rgba(127,127,127,.08);text-align:left}
     </style>
   </head>
 
@@ -45,112 +39,176 @@
     </header>
 
     <div class="card">
-      <strong>摘要</strong>
+      <strong>概览（请务必阅读）</strong>
       <ul>
-        <li>FamilyMedVault 旨在帮助你管理个人与家庭健康资料（例如就诊记录、用药信息、紧急卡片等）。</li>
-        <li>应用支持通过“使用 Apple 登录”启用云备份与 AI 功能；也支持本地优先的使用方式。</li>
-        <li>我们尽量将敏感健康数据存储在你的设备上，并在 iOS 上以加密方式保存本地数据。</li>
-        <li>当你选择启用云备份或 AI 功能时，应用会与服务器通信以提供相应服务。</li>
+        <li><strong>本地优先</strong>：你在应用内创建的大部分健康资料默认保存在你的设备上；在 iOS 上会尽量以加密方式保存本地敏感数据。</li>
+        <li><strong>可选在线功能</strong>：当你选择启用“云备份”或“AI 功能”时，应用会与服务器通信以提供服务。</li>
+        <li><strong>使用 Apple 登录</strong>：用于账号登录与云端功能的会话管理；我们不会要求你创建单独用户名密码。</li>
+        <li><strong>我们不出售你的个人信息</strong>，也不会将你的健康数据用于广告定向。</li>
       </ul>
       <div class="small">
-        注：本政策旨在清晰说明数据如何被收集、使用、共享与保护。若未来功能或第三方服务发生变化，我们可能更新本政策并在应用内或页面上提示。
+        本政策用于满足 App Store 审核与用户知情要求：清楚说明我们收集什么、为什么收集、与谁共享、保留多久、你有哪些权利与选择。
       </div>
     </div>
 
-    <h2>1. 我们收集哪些信息</h2>
-
-    <h3>1.1 你主动提供的内容</h3>
-    <ul>
-      <li><strong>健康与医疗资料</strong>：你输入或导入的健康档案、就诊/检查记录、用药计划、过敏/慢病信息、紧急联系人与紧急卡片等。</li>
-      <li><strong>家庭成员信息</strong>：你创建的家庭成员档案与相关健康记录（由你自行添加）。</li>
-      <li><strong>你上传的文件/图片</strong>：例如你选择导入的病历照片、化验单、处方等。</li>
-    </ul>
-
-    <h3>1.2 账号与认证信息（使用 Apple 登录）</h3>
-    <ul>
-      <li><strong>Apple 登录标识</strong>：当你使用 Apple 登录时，我们会收到 Apple 返回的身份令牌（identity token），用于在服务器端验证登录并创建会话。</li>
-      <li><strong>可能的基础资料</strong>：Apple 可能在你首次授权时提供与你 Apple ID 相关的邮箱或姓名信息（具体取决于你的授权与 Apple 的返回）。</li>
-    </ul>
-
-    <h3>1.3 设备与使用信息（必要的技术数据）</h3>
-    <ul>
-      <li><strong>基础网络信息</strong>：与服务器通信所必需的请求信息（例如 IP、请求时间、错误信息）。</li>
-      <li><strong>诊断信息（如崩溃/错误）</strong>：用于排查问题并提升稳定性。我们尽量避免在日志中记录你输入的敏感健康内容。</li>
-    </ul>
-
-    <h2>2. 我们如何使用这些信息</h2>
-    <ul>
-      <li><strong>提供核心功能</strong>：本地管理健康记录、家庭成员、紧急卡片等。</li>
-      <li><strong>账号登录与会话管理</strong>：验证 Apple 登录并在服务器端签发会话令牌。</li>
-      <li><strong>云备份（可选）</strong>：当你启用云备份时，用于上传/下载你的备份数据（通常为加密后的备份内容）。</li>
-      <li><strong>AI 功能（可选）</strong>：当你使用 AI 总结/生成能力时，应用会将你选择的内容发送至服务器，再由服务器调用 AI 服务完成处理并返回结果。</li>
-      <li><strong>安全与防护</strong>：检测异常请求、保护账户安全、防止滥用。</li>
-      <li><strong>改进产品</strong>：分析错误与性能问题，提升体验与可靠性。</li>
-    </ul>
-
-    <h2>3. 我们如何存储与保护数据</h2>
-
-    <h3>3.1 本地存储</h3>
-    <ul>
-      <li>应用采用<strong>本地优先</strong>策略：你创建的大部分健康资料会保存在你的设备上。</li>
-      <li>在 iOS 上，应用会尽可能以<strong>加密方式</strong>保存本地敏感数据（具体取决于系统能力与设备设置）。</li>
-      <li>请妥善保护你的设备解锁方式（Face ID/Touch ID/密码）以降低风险。</li>
-    </ul>
-
-    <h3>3.2 服务器与云端（启用相关功能时）</h3>
-    <ul>
-      <li>当你启用云备份或 AI 功能时，数据会通过网络传输至服务器。</li>
-      <li>我们使用 HTTPS 等行业标准安全措施保护传输过程（具体以你所使用的网络环境为准）。</li>
-      <li>服务器仅在提供功能所需范围内处理数据，并采取访问控制等措施保护数据安全。</li>
-    </ul>
-
-    <h3>3.3 数据保留</h3>
-    <ul>
-      <li><strong>本地数据</strong>：通常由你掌控。卸载应用可能导致本地数据被删除（除非你已导出或云端备份）。</li>
-      <li><strong>服务器数据</strong>：我们尽量最小化保存；当你关闭云备份/删除数据/请求删除账号时，我们将按合理期限处理。</li>
-    </ul>
-
-    <h2>4. 我们会与谁共享信息</h2>
-    <p>我们不会出售你的个人信息。仅在以下情形可能共享必要信息：</p>
-    <ul>
-      <li><strong>服务提供商</strong>：为实现 AI、云存储、日志监控等功能，可能需要与第三方服务交互（例如 AI 模型提供商、云存储提供商）。我们会尽量限制共享范围，仅用于提供服务。</li>
-      <li><strong>法律与合规</strong>：当法律法规要求、司法程序或政府机关合法要求时，我们可能披露必要信息。</li>
-      <li><strong>保护权利与安全</strong>：为保护用户、公众或我们自身的合法权益与安全，必要时可能披露相关信息（例如防止欺诈或攻击）。</li>
-    </ul>
-
-    <h2>5. 你的权利与选择</h2>
-    <ul>
-      <li><strong>访问/更正</strong>：你可以在应用内查看并修改你录入的资料。</li>
-      <li><strong>导出</strong>：你可以在应用内使用导出功能（如有）导出你的数据副本。</li>
-      <li><strong>删除</strong>：你可以删除记录/成员；也可以通过卸载应用清除本地数据。若你启用了云端功能，可通过应用内或联系我们请求删除云端相关数据。</li>
-      <li><strong>关闭云备份与 AI</strong>：你可以选择不启用或在设置中关闭相关功能（如提供）。</li>
-    </ul>
-
-    <h2>6. 儿童隐私</h2>
+    <h2>1. 本政策适用范围</h2>
     <p>
-      FamilyMedVault 并非面向未满 13 周岁儿童单独提供服务的应用。若你是监护人并认为儿童向我们提供了个人信息，请联系我们以便处理。
+      本政策适用于 FamilyMedVault 移动应用及其相关服务（统称“本服务”）。
+      若你通过本服务访问第三方网站或服务，其隐私做法由第三方负责，本政策不适用于第三方。
     </p>
 
-    <h2>7. 跨境传输</h2>
-    <p>
-      若你启用云备份或 AI 功能，数据可能会在你所在国家/地区之外的服务器或第三方服务上处理（取决于部署与服务提供商区域）。我们会采取合理安全措施保护数据。
+    <h2>2. 我们收集哪些信息</h2>
+
+    <h3>2.1 你主动提供的内容（可能包含敏感/健康数据）</h3>
+    <ul>
+      <li><strong>健康资料与记录</strong>：例如就诊/检查记录、症状与趋势、用药计划、过敏与慢病信息、影像/化验单要点、紧急卡片信息等。</li>
+      <li><strong>家庭成员信息</strong>：你创建的家庭成员档案及其关联健康记录（由你自行添加）。</li>
+      <li><strong>导入的文件/图片</strong>：例如你选择从相册/文件导入的病历照片、处方、检查单等。</li>
+    </ul>
+
+    <h3>2.2 账号与认证信息（使用 Apple 登录）</h3>
+    <ul>
+      <li><strong>Apple 身份令牌（identity token）</strong>：用于在服务器端验证你的 Apple 登录请求并建立会话。</li>
+      <li><strong>Apple 用户标识（sub）</strong>：用于将你的会话与账号关联。</li>
+      <li><strong>可能的邮箱/姓名</strong>：仅在 Apple 首次授权且 Apple 提供时可获得（取决于你的授权与 Apple 返回）。</li>
+    </ul>
+
+    <h3>2.3 设备权限相关信息（按需、仅在你授权时）</h3>
+    <ul>
+      <li><strong>相机</strong>：用于拍摄你选择导入的医疗资料图片（若你使用拍摄/导入功能）。</li>
+      <li><strong>照片/媒体库、文件</strong>：用于读取你选择导入的图片/文档，以及在你选择时保存导出的内容。</li>
+      <li><strong>通知</strong>：用于你选择启用的提醒（如用药/预约提醒）。</li>
+      <li class="small">我们不会在未获得你明确授权的情况下访问相机/相册/文件。</li>
+    </ul>
+
+    <h3>2.4 网络与日志信息（运行所必需）</h3>
+    <ul>
+      <li><strong>请求日志</strong>：为提供服务、保障安全、排查故障所需的最小信息（例如请求时间、请求路径、返回码）。</li>
+      <li><strong>网络标识</strong>：例如 IP 地址与设备/系统的基础信息（通常由网络请求自动携带）。</li>
+      <li><strong>错误信息</strong>：用于诊断崩溃、网络失败或功能异常。我们尽量避免在日志中记录你输入的健康内容。</li>
+    </ul>
+
+    <h2>3. 我们如何使用信息（目的与必要性）</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>信息类型</th>
+          <th>使用目的</th>
+          <th>是否必需</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>你输入/导入的健康资料与家庭成员信息</td>
+          <td>提供本地管理、展示、搜索、统计、导出等核心功能</td>
+          <td>必需（用于核心功能）</td>
+        </tr>
+        <tr>
+          <td>Apple 登录令牌与账号标识</td>
+          <td>完成登录验证、建立会话、启用云备份/AI 等在线功能</td>
+          <td>启用在线功能时必需</td>
+        </tr>
+        <tr>
+          <td>云备份数据（通常为你设备生成的备份内容，可能为加密内容）</td>
+          <td>上传/下载备份、跨设备恢复、冲突检测</td>
+          <td>仅在你启用云备份时</td>
+        </tr>
+        <tr>
+          <td>AI 请求内容（你选择发送的文本/摘要/记录片段等）</td>
+          <td>生成 AI 总结/解释/建议性文本（非医疗建议）</td>
+          <td>仅在你使用 AI 功能时</td>
+        </tr>
+        <tr>
+          <td>请求日志、错误信息</td>
+          <td>安全防护、反滥用、故障排查、性能与稳定性改进</td>
+          <td>必需（合理最小化）</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>4. 我们如何共享信息（与谁共享、为何共享）</h2>
+    <p>我们不会出售你的个人信息。仅在以下范围共享最小必要信息：</p>
+    <ul>
+      <li>
+        <strong>Apple（登录认证）</strong>：当你选择“使用 Apple 登录”时，Apple 会处理认证流程并向我们返回用于验证的令牌与必要信息。
+      </li>
+      <li>
+        <strong>云存储/对象存储服务提供商（云备份，若启用）</strong>：用于存储你的备份对象（通常通过签名 URL 或受控凭证访问）。
+      </li>
+      <li>
+        <strong>AI 服务提供商（AI 功能，若启用）</strong>：当你使用 AI 功能时，你选择的内容会经由我们的服务器转发给 AI 提供商处理并返回结果。
+      </li>
+      <li>
+        <strong>法律与合规</strong>：在法律法规要求或合法程序下，可能披露必要信息。
+      </li>
+      <li>
+        <strong>安全与权利保护</strong>：为防止欺诈、攻击或滥用，保护用户与我们的合法权益时可能披露必要信息。
+      </li>
+    </ul>
+
+    <div class="card">
+      <strong>特别说明：健康数据与 AI</strong>
+      <div class="small">
+        只有当你主动使用 AI 功能时，我们才会处理你提交的内容。AI 输出仅供参考，不构成医疗建议或诊断。请在提交前自行判断是否包含不必要的敏感信息。
+      </div>
+    </div>
+
+    <h2>5. 数据存储、保留与删除</h2>
+    <h3>5.1 本地数据</h3>
+    <ul>
+      <li>默认情况下，你的数据保存在你的设备上；你可在应用内删除记录或卸载应用清除本地数据（卸载可能导致数据丢失，请提前导出或确认备份）。</li>
+      <li>在 iOS 上，本应用会尽量使用系统安全能力对本地敏感数据进行加密存储。</li>
+    </ul>
+
+    <h3>5.2 服务器端数据（仅当你启用在线功能）</h3>
+    <ul>
+      <li><strong>会话令牌与安全日志</strong>：为账号登录与安全目的保留合理期限。</li>
+      <li><strong>云备份对象</strong>：在你启用云备份期间保留；你关闭云备份或请求删除时，我们将按合理流程删除或停止提供访问。</li>
+      <li><strong>AI 请求</strong>：为提供服务可能会临时处理；我们尽量减少持久化保存。不同 AI 提供商可能有各自的数据保留政策。</li>
+    </ul>
+
+    <h2>6. 安全措施</h2>
+    <ul>
+      <li><strong>传输安全</strong>：在线功能使用 HTTPS 等安全传输方式。</li>
+      <li><strong>访问控制</strong>：服务器端对敏感操作使用会话令牌与权限校验。</li>
+      <li><strong>最小化原则</strong>：尽量只收集实现功能所需的最少信息。</li>
+    </ul>
+    <p class="small">
+      互联网环境无法保证绝对安全。请你妥善保管设备解锁方式（Face ID/Touch ID/密码）以及 Apple 账号安全设置。
     </p>
 
-    <h2>8. 本政策的更新</h2>
+    <h2>7. 你的权利与选择</h2>
+    <ul>
+      <li><strong>访问/更正</strong>：你可在应用内查看并修改你录入的数据。</li>
+      <li><strong>删除</strong>：你可在应用内删除记录；也可卸载应用删除本地数据。若你启用了云端功能，可通过应用内功能或邮件联系我们请求删除云端相关数据。</li>
+      <li><strong>导出</strong>：你可在应用内使用导出功能（如提供）导出你的数据副本。</li>
+      <li><strong>关闭在线功能</strong>：你可选择不使用云备份或 AI 功能。</li>
+      <li><strong>权限管理</strong>：你可在 iOS 系统设置中随时撤回相机/照片/通知等权限（撤回可能影响对应功能）。</li>
+    </ul>
+
+    <h2>8. 儿童隐私</h2>
     <p>
-      我们可能不时更新本隐私政策。当发生重大变更时，我们会在应用内或通过本页面提示。更新后的政策自发布之日起生效（除非另有说明）。
+      本服务不面向未满 13 周岁儿童单独提供。若你是监护人并认为儿童向我们提供了个人信息，请联系我们以便处理。
     </p>
 
-    <h2>9. 联系我们</h2>
+    <h2>9. 跨境传输</h2>
+    <p>
+      若你启用云备份或 AI 功能，数据可能会在你所在国家/地区之外的服务器或第三方服务上处理（取决于部署区域与服务提供商）。我们会采取合理安全措施保护数据。
+    </p>
+
+    <h2>10. 政策更新</h2>
+    <p>
+      我们可能不时更新本政策。当发生重大变更时，我们会在应用内或通过本页面提示。更新后的政策自发布之日起生效（除非另有说明）。
+    </p>
+
+    <h2>11. 联系我们</h2>
     <p>
       如你对本隐私政策或数据处理有任何疑问、意见或请求，请联系：<br />
       邮箱：<a href="mailto:jianchen863988@gmail.com">jianchen863988@gmail.com</a>
     </p>
 
     <footer>
-      <div class="small">
-        © 2026 FamilyMedVault. All rights reserved.
-      </div>
+      <div class="small">© 2026 FamilyMedVault. All rights reserved.</div>
     </footer>
   </body>
 </html>
