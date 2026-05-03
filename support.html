@@ -1,158 +1,225 @@
-<!doctype html>
-<html lang="zh-CN">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>FamilyMedVault 技术支持</title>
-    <meta name="description" content="FamilyMedVault 技术支持与常见问题（FAQ）" />
-    <style>
-      :root { color-scheme: light dark; }
-      body{
-        font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
-        line-height:1.7;max-width:980px;margin:0 auto;padding:24px
-      }
-      header{margin-bottom:16px}
-      h1{font-size:28px;margin:0 0 8px}
-      .meta{color:#666;font-size:14px}
-      h2{font-size:20px;margin-top:26px}
-      h3{font-size:16px;margin-top:16px}
-      a{color:inherit}
-      ul{padding-left:20px}
-      code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace}
-      .card{border:1px solid rgba(127,127,127,.25);border-radius:12px;padding:14px 16px;margin:14px 0}
-      .small{font-size:13px;opacity:.85}
-      .grid{display:grid;grid-template-columns:1fr;gap:10px}
-      @media (min-width: 860px){ .grid{grid-template-columns:1fr 1fr} }
-      footer{margin-top:36px;padding-top:16px;border-top:1px solid rgba(127,127,127,.25)}
-      .pill{display:inline-block;border:1px solid rgba(127,127,127,.25);border-radius:999px;padding:4px 10px;font-size:12px;opacity:.9;margin-right:6px}
-    </style>
-  </head>
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="FamilyMedVault 技术支持：联系方式、订阅管理、权限说明与常见问题。" />
+  <title>技术支持 — FamilyMedVault</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      line-height: 1.65;
+      color: #1a1a1a;
+      background: #fff;
+      max-width: 46rem;
+      margin: 0 auto;
+      padding: 1.5rem 1.25rem 3.5rem;
+    }
+    @media (prefers-color-scheme: dark) {
+      body { color: #e8e8e8; background: #121212; }
+      a { color: #7ec8ff; }
+      .box { background: #1a1a1a; border-color: #333; }
+    }
+    h1 { font-size: 1.6rem; margin: 0 0 0.5rem; font-weight: 800; }
+    .meta { color: #666; font-size: 0.92rem; margin-bottom: 1.5rem; }
+    h2 { font-size: 1.15rem; margin: 2rem 0 0.65rem; font-weight: 800; }
+    h3 { font-size: 1.05rem; margin: 1.35rem 0 0.5rem; font-weight: 700; }
+    p, li { font-size: 0.95rem; margin: 0.55rem 0; }
+    ul { padding-left: 1.35rem; }
+    ol { padding-left: 1.35rem; }
+    a { color: #0b57d0; word-break: break-word; }
+    .box {
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 1rem 1.15rem;
+      margin: 1.15rem 0;
+      background: #fafafa;
+    }
+    .note { font-size: 0.88rem; color: #555; }
+    hr { border: none; border-top: 1px solid #ddd; margin: 2rem 0; }
+    code { font-size: 0.88rem; padding: 0.1rem 0.35rem; border-radius: 4px; background: #eee; }
+    @media (prefers-color-scheme: dark) { code { background: #2a2a2a; } }
+  </style>
+</head>
+<body>
 
-  <body>
-    <header>
-      <h1>FamilyMedVault 技术支持</h1>
-      <div class="meta">
-        更新日期：2026-04-30<br />
-        开发者：个人开发者（Jian Chen）<br />
-        联系邮箱：<a href="mailto:jianchen863988@gmail.com">jianchen863988@gmail.com</a>
-      </div>
-    </header>
+<h1>技术支持</h1>
+<p class="meta"><strong>文档版本：</strong>2026 年 5 月 2 日<br />
+<strong>适用应用：</strong>FamilyMedVault（iOS，Apple App Store）</p>
 
-    <div class="card">
-      <strong>如何获取帮助</strong>
-      <ul>
-        <li>
-          <strong>邮件支持（推荐）</strong>：<a href="mailto:jianchen863988@gmail.com">jianchen863988@gmail.com</a>
-        </li>
-        <li>
-          请在邮件中尽量包含：<span class="pill">问题描述</span><span class="pill">发生时间</span><span class="pill">设备型号</span><span class="pill">iOS 版本</span><span class="pill">App 版本</span>
-          以及相关截图/录屏（可打码敏感信息）。
-        </li>
-        <li class="small">
-          若问题涉及健康资料或隐私，请避免在邮件里发送不必要的敏感内容；可以用“示例数据/打码截图”替代。
-        </li>
-      </ul>
-    </div>
+<p>
+本页面为 <strong>FamilyMedVault</strong> 官方技术支持说明，旨在帮助您顺利完成安装、授权、订阅管理与常见问题排查。
+本应用由独立开发者运营；我们致力于在合理时间内响应您的邮件咨询。
+<strong>本页内容不构成医疗建议</strong>；急症请拨打当地急救电话或前往医疗机构。
+</p>
 
-    <h2>常见问题（FAQ）</h2>
+<div class="box">
+  <p><strong>联系我们（首选）</strong></p>
+  <p>
+    <strong>电子邮箱：</strong><a href="mailto:jianchen8863988@gmail.com">jianchen8863988@gmail.com</a><br />
+    <strong>回复时效：</strong>通常在 <strong>3–5 个工作日</strong>内回复（节假日或复杂问题可能延长）。请在邮件中注明设备型号、系统版本、应用版本及问题截图（如有）。
+  </p>
+  <p class="note">
+    请勿在邮件中发送完整身份证号、银行卡号等<b>非必要敏感信息</b>；健康详情请按需最小化提供。
+  </p>
+</div>
 
-    <div class="grid">
-      <div class="card">
-        <h3>1) FamilyMedVault 是做什么的？</h3>
-        <p>
-          FamilyMedVault 用于管理你和家人的健康资料：就诊记录、用药计划、症状趋势、紧急卡片等。
-          应用采用<strong>本地优先</strong>策略，你的数据默认保存在设备上；你也可以选择启用云备份与 AI 功能。
-        </p>
-      </div>
+<p>
+<strong>线上文档入口（与 App 内链接保持一致）：</strong><br />
+技术支持（本页）：
+<a href="https://jchen8863988.github.io/familymedvault-legal/support.html" target="_blank" rel="noopener noreferrer">https://jchen8863988.github.io/familymedvault-legal/support.html</a><br />
+隐私政策、使用条款等请以应用内「会员」页底部链接为准。
+</p>
 
-      <div class="card">
-        <h3>2) “使用 Apple 登录”失败怎么办？</h3>
-        <ul>
-          <li>确认设备已登录 Apple ID，且网络可用。</li>
-          <li>关闭 VPN/代理后重试（某些网络环境会影响登录与服务器请求）。</li>
-          <li>如果仍失败，请把错误提示截图发邮件给我们。</li>
-        </ul>
-      </div>
+<h2>一、应用简介与适用场景</h2>
+<p>
+FamilyMedVault 面向家庭场景下的健康信息整理，包括但不限于：医疗记录与附件、用药与计划提醒、症状记录与趋势、预约日历（可与系统日历协同）、就医协调类<strong>手记</strong>（如转诊进度由您自行更新）、紧急卡片导出等。
+具体功能以您设备上安装的版本为准。
+</p>
 
-      <div class="card">
-        <h3>3) 我能在多台设备间同步数据吗？</h3>
-        <p>
-          你可以通过<strong>云备份</strong>（若启用）在多台设备间恢复数据。为保障隐私与安全，备份通常会以加密形式存储与传输。
-        </p>
-      </div>
+<h2>二、系统与环境要求</h2>
+<ul>
+  <li><strong>平台：</strong>iOS（通过 Apple App Store 分发）。</li>
+  <li><strong>网络：</strong>核心记录功能以<strong>本地优先</strong>为主；部分可选能力（例如云端 AI、自建备份地址访问）需要互联网连接。</li>
+  <li><strong>更新：</strong>建议保持 iOS 与应用为较新版本，以获得安全修复与兼容性改进。</li>
+</ul>
 
-      <div class="card">
-        <h3>4) AI 功能的输出可靠吗？</h3>
-        <p>
-          AI 输出仅供参考，不构成医疗建议或诊断。请在关键决策前咨询合格的医疗专业人士。
-          你应避免向 AI 提交不必要的敏感信息。
-        </p>
-      </div>
+<h2>三、订阅与账单（Apple App Store）</h2>
+<p>
+会员权益（若适用）通过 <strong>App 内购买 / 自动续期订阅</strong> 由 Apple 计费。
+<strong>我们无法在应用外为您修改 Apple 账单或退款</strong>；订阅的开通、变更与取消通常在 Apple 账户侧完成。
+</p>
+<h3>3.1 查看或取消订阅（常规路径）</h3>
+<ol>
+  <li>打开 iPhone <strong>「设置」</strong> → 轻点顶部 <strong>Apple ID</strong>（姓名）。</li>
+  <li>进入 <strong>「订阅」</strong>。</li>
+  <li>在列表中选择 <strong>FamilyMedVault</strong>（或显示名称以 App Store 为准）。</li>
+  <li>在此查看续订日期、方案与<strong>取消订阅</strong>选项。</li>
+</ol>
+<p class="note">
+取消订阅后，通常可在当前账单周期结束前继续使用已付费权益；具体以 Apple 界面说明为准。
+</p>
 
-      <div class="card">
-        <h3>5) 为什么需要相机/相册权限？</h3>
-        <p>
-          当你选择拍摄或导入医疗资料（如处方、检查单、病历照片）时，应用需要相机/照片/文件权限来读取你<strong>主动选择</strong>的内容。
-          你可以在系统设置中随时撤回权限（撤回后相关功能可能无法使用）。
-        </p>
-      </div>
+<h3>3.2 恢复购买（Restore）</h3>
+<p>
+若您已在当前 Apple ID 下购买过符合条件的权益，可在应用内会员相关页面使用<strong>恢复购买</strong>（若版本提供该入口）。
+仍无法识别时，请确认登录的是<strong>购买时所使用的 Apple ID</strong>，并检查网络与系统时间。
+</p>
 
-      <div class="card">
-        <h3>6) 我如何导出或删除我的数据？</h3>
-        <ul>
-          <li>你可以在应用内删除记录/家庭成员数据。</li>
-          <li>如应用提供“导出/数据导出”功能，你可以导出数据副本留存。</li>
-          <li>卸载应用通常会清除本地数据（请提前确认是否已导出或备份）。</li>
-        </ul>
-      </div>
+<h3>3.3 退款与账单争议</h3>
+<p>
+如需申请退款或咨询扣款问题，请通过 Apple 官方支持渠道提交请求；开发者无法代替 Apple 批准退款。
+</p>
 
-      <div class="card">
-        <h3>7) 我在使用提醒/通知时遇到问题</h3>
-        <ul>
-          <li>请在 iOS 系统设置中确认已允许本应用通知。</li>
-          <li>检查是否开启了专注模式/勿扰模式导致通知被静音。</li>
-          <li>仍无法解决请提供截图与时间点，我们协助排查。</li>
-        </ul>
-      </div>
+<h2>四、权限说明（为何需要）</h2>
+<ul>
+  <li><strong>通知：</strong>用于用药、预约等<strong>本地提醒</strong>（若您启用）。若关闭通知权限，提醒可能无法弹出。</li>
+  <li><strong>日历（读/写）：</strong>仅在您启用相关同步或写入功能时使用，用于与系统日历协同。</li>
+  <li><strong>相机 / 相册：</strong>用于添加影像附件或 OCR 辅助录入（若您主动操作）。</li>
+  <li><strong>面容 ID / 触控 ID（若您启用应用锁）：</strong>用于解锁应用，数据留在设备侧处理。</li>
+</ul>
+<p class="note">
+您可随时在 iOS <strong>设置 → 隐私与安全性</strong> 中查看或撤回权限；撤回可能导致对应功能不可用。
+</p>
+<h2>五、功能相关常见问题（FAQ）</h2>
 
-      <div class="card">
-        <h3>8) “网络请求失败 / Network request failed”</h3>
-        <ul>
-          <li>确认网络可访问（Wi‑Fi/蜂窝数据正常）。</li>
-          <li>尝试关闭 VPN/代理。</li>
-          <li>如果你在公司/校园网络，可能存在限制；可换网络重试。</li>
-        </ul>
-      </div>
-    </div>
+<h3>5.1 首页 /「当前成员」与预约列表</h3>
+<ul>
+  <li><strong>提示先选择当前成员：</strong>请在应用中选定当前家庭成员后再添加记录或预约；从「家庭」返回「日历」等页面后，若列表未刷新，可切换离开该标签页再进入一次。</li>
+  <li><strong>预约保存在哪里：</strong>预约条目显示在日历页下方「当前成员的预约」列表中；请向下滑动查看。</li>
+</ul>
 
-    <h2>故障排查（建议在邮件里附上）</h2>
-    <div class="card">
-      <ul>
-        <li><strong>设备信息</strong>：iPhone 型号、iOS 版本</li>
-        <li><strong>App 信息</strong>：App 版本号（如可见）</li>
-        <li><strong>问题复现步骤</strong>：从打开 App 开始一步步描述</li>
-        <li><strong>期望结果 vs 实际结果</strong></li>
-        <li><strong>截图/录屏</strong>：请打码敏感信息</li>
-      </ul>
-      <div class="small">
-        我们通常会在合理时间内回复。若你遇到紧急医疗情况，请立即联系当地急救服务。
-      </div>
-    </div>
+<h3>5.2 预约日历与系统日历</h3>
+<ul>
+  <li><strong>双向同步：</strong>若开启同步，新建或更新的预约可能写入本机日历账户；您在「日历」App 中修改时间后，可使用应用内「从日历拉回更新」尝试同步回应用（需日历权限）。</li>
+  <li><strong>删除预约：</strong>在预约条目卡片上可使用「删除预约」；若曾写入系统日历，应用将尽力移除对应日程（受系统与权限影响）。</li>
+</ul>
 
-    <h2>隐私与法律</h2>
-    <ul>
-      <li>
-        隐私政策：请查看你在 App Store/应用内提供的“隐私政策”链接。
-      </li>
-      <li>
-        EULA：请查看你在 App Store/应用内提供的“最终用户许可协议（EULA）”链接。
-      </li>
-    </ul>
+<h3>5.3 提醒与「安排 / 重新安排」</h3>
+<ul>
+  <li><strong>提醒不出现：</strong>请检查系统通知权限、请勿打扰模式、以及预约开始时间与提前分钟数是否合理（提醒触发时间须在未来）。</li>
+  <li><strong>点击无反应或提示无法安排：</strong>请查看弹窗说明；常见原因包括通知权限被拒绝、提醒时间已过期、或系统拒绝调度。</li>
+</ul>
 
-    <footer>
-      <div class="small">
-        © 2026 FamilyMedVault. 技术支持邮箱：<a href="mailto:jianchen863988@gmail.com">jianchen863988@gmail.com</a>
-      </div>
-    </footer>
-  </body>
+<h3>5.4 用药与随访等功能</h3>
+<ul>
+  <li>用药计划与提醒依赖本地通知；修改计划后请关注下一次提醒时间是否合理。</li>
+  <li>症状趋势等功能可能对会员等级有要求，请以应用内提示为准。</li>
+</ul>
+
+<h3>5.5 协调 / 转诊手记</h3>
+<ul>
+  <li>相关状态由<strong>您手动维护</strong>，用于个人备忘与跟进；<strong>不连接医院或保险公司的实时系统</strong>。</li>
+</ul>
+
+<h3>5.6 云端 AI（若您启用）</h3>
+<ul>
+  <li>需在隐私设置中满足相应同意条件；云端处理可能依赖您配置的地址与服务可用性。</li>
+  <li>输出仅供参考，不能替代执业医师判断。</li>
+</ul>
+
+<h3>5.7 加密云备份（若您启用）</h3>
+<ul>
+  <li>备份目的地由您配置的 URL / 凭据决定；请确保服务器可信、传输使用 HTTPS，并妥善保管令牌。</li>
+  <li>运营者不默认托管您的备份服务器。</li>
+</ul>
+
+<h3>5.8 通过 Apple 登录（若可用）</h3>
+<ul>
+  <li>登录依赖 Apple ID；若您配置了后端校验地址，请确保该地址正确且服务可用。</li>
+</ul>
+
+<h3>5.9 导出与删除数据</h3>
+<ul>
+  <li><strong>导出：</strong>若设置中提供数据导出，导出文件可能保存在本机「文件」或应用文档目录；请自行妥善保管导出文件。</li>
+  <li><strong>删除：</strong>应用内删除操作通常清除本应用在本机存储的数据；此操作可能<strong>不可恢复</strong>，请谨慎确认。</li>
+</ul>
+
+<h2>六、故障排查（通用步骤）</h2>
+<ol>
+  <li>重启应用；必要时重启设备。</li>
+  <li>将 iOS 与 FamilyMedVault 更新至最新版本。</li>
+  <li>确认网络畅通（使用云端功能时）。</li>
+  <li>检查相关系统权限是否开启。</li>
+  <li>尝试退出并通过 Apple ID 恢复购买（仅订阅相关问题）。</li>
+  <li>若问题仍存在，请邮件联系我们，并附上：设备型号、iOS 版本、应用版本、复现步骤与截图。</li>
+</ol>
+<h2>七、隐私与安全文档</h2>
+<p>
+有关个人信息处理范围、可选功能与权利说明，请参阅应用内<strong>《隐私政策》</strong>全文。
+订阅及软件许可请以 App Store 展示及应用内<strong>使用条款（EULA）链接</strong>为准。
+</p>
+<ul>
+  <li>Apple 标准 EULA（参考）：
+    <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener noreferrer">https://www.apple.com/legal/internet-services/itunes/dev/stdeula/</a>
+  </li>
+</ul>
+
+<h2>八、医疗免责声明</h2>
+<div class="box">
+  FamilyMedVault 用于家庭健康信息的整理与提醒辅助。<strong>不能替代执业医生的诊断、处方或治疗建议。</strong>
+  应用内展示的趋势、文本或可选 AI 输出均<strong>不构成医疗意见</strong>。
+  紧急医疗情况请立即就医或拨打当地急救电话。
+</div>
+
+<h2>九、服务变更与可用性</h2>
+<p>
+我们可能因维护、法规或技术原因调整功能；不影响您依法对已存储于设备的数据行使控制权（以应用能力与系统允许为限）。
+除非法律另有规定，本技术支持页面提供的途径<strong>不构成对特定响应时限的保证</strong>。
+</p>
+
+<h2>十、知识产权</h2>
+<p>
+FamilyMedVault 的名称、界面设计与软件著作权归运营者所有或经合法授权。未经许可，不得反向工程、绕过安全机制或用于违法用途。
+</p>
+
+<hr />
+<p class="note">
+© 2026 Jian Chen。应用程序名称：<strong>FamilyMedVault</strong>。<br />
+技术支持页面 URL：
+<a href="https://jchen8863988.github.io/familymedvault-legal/support.html">https://jchen8863988.github.io/familymedvault-legal/support.html</a>
+</p>
+
+</body>
 </html>
