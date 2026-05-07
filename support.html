@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="FamilyMedVault 技术支持 — App Store 用户帮助与联系渠道。" />
+  <meta name="description" content="FamilyMedVault 技术支持 — App Store 用户帮助与联系渠道（独立开发者）。" />
   <title>技术支持 — FamilyMedVault</title>
   <style>
     :root { color-scheme: light dark; }
@@ -18,6 +18,7 @@
     .meta-box { border-left: 4px solid #444; padding: 0.75rem 1rem; margin: 1rem 0; background: rgba(128,128,128,.08); }
     .en { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 2px solid rgba(128,128,128,.35); }
     a { color: inherit; }
+    code { font-size: 0.88em; }
   </style>
 </head>
 <body>
@@ -40,26 +41,26 @@
   <h2>2. 联系方式（首选）</h2>
   <ul>
     <li><strong>电子邮箱：</strong><a href="mailto:hello@familymedvault.com?subject=%5BFamilyMedVault%5D%20%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81">hello@familymedvault.com</a></li>
-    <li><strong>建议邮件主题示例：</strong><code>[FamilyMedVault] iOS 使用问题 / 登录 / 云端 AI / 备份</code></li>
+    <li><strong>建议邮件主题示例：</strong><code>[FamilyMedVault] iOS / iPad 使用问题 / 登录 / 云端 AI / 备份</code></li>
     <li><strong>语言：</strong>中文或英文均可；回复可能为中文或英文。</li>
     <li><strong>响应时间：</strong>通常尝试在<strong>数个工作日</strong>内回复；业务高峰或复杂问题可能延长。请勿将邮件支持用于紧急医疗决策。</li>
   </ul>
 
   <h2>3. 我们通常能帮助您的问题</h2>
   <ul>
-    <li>应用安装、更新与基础使用（记录、家庭成员、提醒、导出等）。</li>
+    <li>应用在 iPhone、iPad（兼容范围内）上的安装、更新与基础使用（记录、家庭成员、提醒、导出等）。</li>
     <li>「通过 Apple 登录」相关常见提示与排查（需您配合提供<strong>已脱敏</strong>信息）。</li>
     <li>订阅档位在应用内显示不同步的<strong>一般</strong>排查（设备时间、网络、恢复购买等）— 扣款与退款仍以 Apple 规则为准（见下节）。</li>
-    <li><strong>云端 AI：</strong>连接失败、积分/Credits 提示、任务类型与文本长度限制等技术性问题（我们<strong>不</strong>通过邮件提供医学结论或诊断）。当前服务端实现通常<strong>优先使用 Google 生成式 AI（如 Gemini）</strong>，在不可用且已配置后备时<strong>可能</strong>使用 OpenAI；具体以您所连接的后端与版本为准。</li>
+    <li><strong>云端 AI：</strong>连接失败、积分/Credits 提示、任务类型与文本长度限制等技术性问题（我们<strong>不</strong>通过邮件提供医学结论或诊断）。当前服务端实现通常<strong>优先使用 Amazon Web Services（AWS）Amazon Bedrock</strong>；若该路径不可用或未配置，则可能<strong>按服务端配置</strong>使用 <strong>Google</strong> 生成式接口（例如 Gemini）作为<strong>后备</strong>。<strong>服务端当前实现不使用 OpenAI。</strong>具体以您所连接的后端部署与版本为准。</li>
     <li><strong>云备份：</strong>上传/下载失败的一般排查（HTTPS、URL、凭据、网络与目标存储权限）。</li>
     <li>官网（若启用）社区提交、人机验证或访问问题。</li>
   </ul>
     <h2>4. 我们通常无法直接代替您处理的事项（请改用对应渠道）</h2>
   <ul>
-    <li><strong>订阅扣款、退款、发票与账单争议：</strong>由 <strong>Apple</strong> 依据 App Store 规则处理。请在 iPhone 上前往「设置 → Apple 账户 → 订阅」或使用 <a href="https://support.apple.com/">Apple 官方支持</a>。</li>
-    <li><strong>Apple ID、设备硬件、iOS 系统问题：</strong>请联系 Apple 支持。</li>
+    <li><strong>订阅扣款、退款、发票与账单争议：</strong>由 <strong>Apple</strong> 依据 App Store 规则处理。请在 iPhone / iPad 上前往「设置 → Apple 账户 → 订阅」或使用 <a href="https://support.apple.com/">Apple 官方支持</a>。</li>
+    <li><strong>Apple ID、设备硬件、iOS / iPadOS 系统问题：</strong>请联系 Apple 支持。</li>
     <li><strong>医学诊断、用药调整、检查报告结论性解读：</strong>请咨询合格医疗专业人员；应用内或云端 AI 输出仅为辅助性信息。</li>
-    <li><strong>第三方服务中断</strong>（运营商网络、您自管或自选的备份存储、您自行配置的第三方 API 密钥 / BYOK 及其服务商）：我们无法替第三方恢复服务，仅能在信息充分时提供一般性排查建议。</li>
+    <li><strong>第三方服务中断</strong>（运营商网络、您自管或自选的备份存储、您自行配置的第三方 API 密钥 / BYOK 及其服务商、AWS 或 Google 等云侧限流/区域策略）：我们无法替第三方恢复服务，仅能在信息充分时提供一般性排查建议。</li>
   </ul>
 
   <h2>5. 订阅、应用内购买与 AI Credits（概要）</h2>
@@ -73,24 +74,24 @@
   <h2>6. 自助排查（联系邮件前建议先尝试）</h2>
   <ul>
     <li>将 App 更新至 App Store <strong>最新版本</strong>。</li>
-    <li>确认 iPhone「日期与时间」为<strong>自动设置</strong>；检查网络（Wi‑Fi / 蜂窝）。</li>
+    <li>确认 iPhone / iPad「日期与时间」为<strong>自动设置</strong>；检查网络（Wi‑Fi / 蜂窝）。</li>
     <li>使用云端相关功能前：在应用中开启<strong>对应开关</strong>，并完成「通过 Apple 登录」（若适用）及隐私/个性化相关同意（若应用提示）。</li>
     <li>订阅异常：在 App Store 使用<strong>恢复购买</strong>后再试。</li>
-    <li>云端 AI：确认<strong>后端地址</strong>配置正确（若您使用自建或开发后端）；网络需可达该 HTTPS 端点。</li>
+    <li>云端 AI：若使用自建或联调后端，请确认 <strong>HTTPS 基础地址</strong> 正确、可自设备访问，且与《隐私政策》中描述的服务器能力一致；AWS 相关错误通常与<strong>区域、模型开通、访问凭证</strong>或服务商状态有关，请尽量提供<strong>可复制的错误原文</strong>（勿在邮件中粘贴密钥）。</li>
   </ul>
 
   <h2>7. 写信时请附上（可显著加快处理）</h2>
   <ul>
-    <li>设备型号（例如 iPhone 16）。</li>
-    <li>iOS 版本（设置 → 通用 → 关于本机）。</li>
+    <li>设备型号（例如 iPhone 16、iPad Pro 等）。</li>
+    <li>iOS / iPadOS 版本（设置 → 通用 → 关于本机）。</li>
     <li>应用版本（App Store 或应用内「关于」）。</li>
     <li>问题<strong>复现步骤</strong>；截图请<strong>避免</strong>包含敏感健康细节（可对姓名、编号等打码）。</li>
     <li>如涉及云端 AI / 备份：大致<strong>发生时间</strong>、<strong>错误提示原文</strong>（可复制文本优先）。</li>
   </ul>
+    <h2>8. 服务边界与责任限制（独立开发者）</h2>
+  <p>在适用法律允许的最大范围内，对于因<strong>Apple、网络运营商、云服务商（含 AWS、Google 等）、AI 提供商</strong>等第三方造成的中断，或因您设备环境、操作不当、BYOK 配置错误、后端非我方部署导致的兼容性问题，我们在<strong>合理范围</strong>内提供说明性协助，但<strong>不对第三方服务的持续可用性作出担保</strong>。本技术支持<strong>不构成</strong>专业法律、财务或医疗建议。</p>
 
-  <h2>8. 服务边界与责任限制（独立开发者）</h2>
-  <p>在适用法律允许的最大范围内，对于因<strong>Apple、网络运营商、云服务商、AI 提供商</strong>等第三方造成的中断，或因您设备环境、操作不当、BYOK 配置错误、后端非我方部署导致的兼容性问题，我们在<strong>合理范围</strong>内提供说明性协助，但<strong>不对第三方服务的持续可用性作出担保</strong>。本技术支持<strong>不构成</strong>专业法律、财务或医疗建议。</p>
-    <h2>9. 隐私与数据请求</h2>
+  <h2>9. 隐私与数据请求</h2>
   <p>个人信息的收集、使用与您的权利，请参阅《<a href="https://jchen8863988.github.io/familymedvault-legal/privacy.html">隐私政策</a>》。行使访问、删除等数据权利时，请使用隐私政策中的联系方式并注明「数据权利」或按该页指引操作。</p>
 
   <h2>10. 本页更新</h2>
@@ -105,7 +106,7 @@
     <p><strong>Emergency:</strong> FamilyMedVault is <strong>not</strong> for emergencies or telemedicine. Call your local emergency number or seek immediate in‑person care.</p>
     <p>FamilyMedVault is operated by an <strong>individual developer</strong>. For technical support, email <a href="mailto:hello@familymedvault.com">hello@familymedvault.com</a>. We aim to respond within a <strong>few business days</strong>; this is <strong>not</strong> a 24/7 hotline and <strong>not</strong> an SLA.</p>
     <p><strong>Billing, refunds, and subscription disputes</strong> are handled by <strong>Apple</strong> under App Store rules (Settings → Apple Account → Subscriptions, or Apple Support). <strong>Medical decisions</strong> belong with qualified professionals; AI outputs are informational only.</p>
-    <p><strong>Optional cloud AI</strong> may route prompts to a backend you configure; server-side AI typically <strong>prefers Google generative AI (e.g., Gemini)</strong> when enabled and may <strong>fall back to OpenAI</strong> when configured if the primary path is unavailable. <strong>AI Credits</strong> usage rules are described in-app and in the Privacy Policy.</p>
+    <p><strong>Optional cloud AI</strong> routes prompts to the operator’s backend when enabled. The server typically calls <strong>AWS Amazon Bedrock</strong> first; if unavailable or not configured, it may fall back to <strong>Google generative AI (e.g., Gemini)</strong> as configured. <strong>OpenAI is not used</strong> on the server in the current implementation. <strong>AI Credits</strong> usage rules are described in-app and in the Privacy Policy.</p>
     <p>Privacy practices: see our <a href="https://jchen8863988.github.io/familymedvault-legal/privacy.html">Privacy Policy</a>. Terms: see our <a href="https://jchen8863988.github.io/familymedvault-legal/eula.html">EULA</a>. Third-party outages are outside our control; we provide best-effort guidance only.</p>
   </section>
 </body>
