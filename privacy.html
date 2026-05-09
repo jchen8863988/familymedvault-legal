@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="FamilyMedVault 隐私政策 — App Store 分发与健康信息应用透明度说明（独立开发者）。" />
+  <meta name="description" content="FamilyMedVault 隐私政策 — App Store 分发与健康信息应用透明度说明（独立开发者）。版本 v2026-05-10。" />
   <title>隐私政策 — FamilyMedVault</title>
   <style>
     :root { color-scheme: light dark; }
@@ -18,6 +18,7 @@
     th { background: rgba(128,128,128,.12); }
     .meta { color: #666; font-size: 0.9rem; margin-bottom: 1.5rem; }
     .notice { border-left: 4px solid #444; padding: 0.75rem 1rem; margin: 1rem 0; background: rgba(128,128,128,.08); }
+    .notice.beta { border-left-color: #c08400; background: rgba(192,132,0,.10); }
     .en { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 2px solid rgba(128,128,128,.35); }
     a { color: inherit; }
     code { font-size: 0.88em; }
@@ -26,11 +27,15 @@
 <body>
   <header>
     <h1>隐私政策 — FamilyMedVault</h1>
-    <p class="meta"><strong>生效日期：</strong>2026 年 5 月 7 日（UTC 日历日；强制性法律另有规定的从其规定）</p>
+    <p class="meta"><strong>版本：</strong>v2026-05-10 ｜ <strong>生效日期：</strong>2026 年 5 月 10 日（UTC 日历日；强制性法律另有规定的从其规定）｜ 本版本取代 v2026-05-07 版本。</p>
   </header>
 
   <div class="notice">
     <p><strong>重要提示：</strong>FamilyMedVault 用于协助整理家庭健康信息与就诊准备类场景，<strong>不提供</strong>医疗诊断、治疗决策或急诊指导。本政策旨在满足透明度义务并保护用户知情权；<strong>不构成正式法律意见</strong>。重大合规事项请咨询持证律师。运营者为<strong>独立个人开发者</strong>；服务按「现状」提供。涉及第三方基础设施的部分受其可用性、安全事件与条款约束；我们在合理范围内选择服务商并描述其角色，且不就第三方独立于我们的行为承担超出<strong>个人开发者合理可控范围</strong>的责任（适用法律强制性规定除外）。</p>
+  </div>
+
+  <div class="notice beta">
+    <p><strong>当前试用阶段提示（v2026-05-10 新增）：</strong>本应用中的<strong>云端 AI 助手</strong>等智能功能<strong>当前处于试用 / 公开测试阶段</strong>，可能因第三方生成式 AI 提供方变更、配额限流、网络波动、配置切换或防滥用措施而<strong>不稳定或暂时不可用</strong>。<strong>其余非 AI 功能</strong>（家庭成员管理、本地病历整理、用药提醒、症状记录、设备本地 OCR 等本地优先功能）<strong>通常可独立、正常使用</strong>，不依赖云端 AI 是否可用。详见第 17 条。</p>
   </div>
 
   <h2>1. 控制者与联系方式</h2>
@@ -66,10 +71,13 @@
         <td>健康相关信息</td>
         <td>主要由您在设备上主动录入；仅在您启用依赖网络的功能时，才可能按本政策所述<strong>有限上传</strong>。</td>
       </tr>
+      <tr>
+        <td>云端 AI 服务可用性</td>
+        <td>云端 AI 当前为<strong>试用 / 公测</strong>，可能不稳定或暂时不可用；非 AI 本地优先功能不受影响（见第 17 条）。</td>
+      </tr>
     </tbody>
   </table>
-
-  <h2>4. 网站数据处理（familymedvault.com）</h2>
+    <h2>4. 网站数据处理（familymedvault.com）</h2>
 
   <h3>4.1 托管、分析与性能</h3>
   <p>可能处理的信息：页面浏览、大致地区层级来源（通常为国家/地区层级）、设备与浏览器类型、请求时间与路径等聚合或日志级信息。用途：维持可用性、安全审计、排错与改进产品。服务提供商：网站托管与访问统计可能由 <strong>Vercel</strong> 及其组件处理；请以 Vercel 现行隐私政策为准。</p>
@@ -99,18 +107,18 @@
 
   <h3>5.3 通过 Apple 登录（Sign in with Apple）</h3>
   <p>若您使用「通过 Apple 登录」，Apple 可能向我们提供验证令牌及与账户关联的标识符（例如 Apple 用户标识语境下的 subject）。用途：创建并维持会话、同步您在应用中声明的订阅档位（用于服务端配额与功能）、以及提供云端备份/云端 AI 等可选能力。会话令牌可能以加密形式保存在您的设备上（以实现后续请求）。Apple 作为独立控制者的处理受其条款约束。</p>
-
-  <h3>5.4 订阅（StoreKit）与 AI Credits 计量周期参数</h3>
+    <h3>5.4 订阅（StoreKit）与 AI Credits 计量周期参数</h3>
   <p>订阅购买、恢复购买与权益状态通过 Apple <strong>StoreKit</strong> 在设备侧解析；支付由 Apple 处理。为使「AI Credits」额度周期与订阅周期对齐，应用可能向我们后端报告当前订阅区间的开始/结束时间戳（毫秒）以及是否为年订阅 SKU（由产品标识推断）。这些数据用于计费与公平使用；我们不以此为目的收集与订阅无关的额外财务明细。</p>
+  <p><strong>试用阶段下未消耗 Credits 的处理：</strong>由于第 17 条所述的 AI 功能试用属性，在云端 AI 暂时不可用期间您未消耗的 Credits<strong>不视为损失</strong>，运营者将<strong>在合理范围内</strong>设法保留或顺延（具体规则以应用内当时说明为准）。本声明不影响您依 Apple 规则及强制性消费者法享有的退款权利；订阅退款与账单争议请通过 Apple「设置 → Apple 账户 → 订阅」与 Apple 支持渠道办理。</p>
 
-  <h3>5.5 云端 AI（可选；健康信息辅助场景）</h3>
-  <p>若您在设置中<strong>启用云端 AI</strong>、已满足应用内隐私/个性化相关同意要求并已登录，您的问题文本以及应用基于本地资料生成的<strong>摘要式上下文</strong>可能经 TLS 加密传输至<strong>运营者提供的后端服务</strong>（HTTPS）。后端按当前版本实现，优先通过 <strong>Amazon Web Services（AWS）Amazon Bedrock</strong> 调用生成式模型（计费与可用性受 AWS 账户与模型开通策略约束）；若该路径不可用或未配置，则可能<strong>按服务端配置</strong>调用 <strong>Google</strong> 的生成式接口（例如 Gemini / Google AI 相关内容接口）作为<strong>后备</strong>。<strong>服务端当前实现不再使用 OpenAI 接口。</strong>具体路由以部署环境与版本为准。</p>
+  <h3>5.5 云端 AI（可选；试用阶段；健康信息辅助场景）</h3>
+  <p>若您在设置中<strong>启用云端 AI</strong>、已满足应用内隐私/个性化相关同意要求并已登录，您的问题文本以及应用基于本地资料生成的<strong>摘要式上下文</strong>可能经 TLS 加密传输至<strong>运营者提供的后端服务</strong>（HTTPS）。后端按当前版本实现，<strong>优先调用 Google 生成式接口（例如 Gemini / Google AI 相关接口）</strong>；若该路径不可用或未配置，则可能<strong>按服务端配置</strong>使用 <strong>Amazon Web Services（AWS）Amazon Bedrock</strong> 作为<strong>后备</strong>路径。<strong>服务端当前实现不再使用 OpenAI 接口。</strong>具体路由顺序、模型与提供方<strong>可能随时调整</strong>，以部署环境与版本为准。云端 AI 可用性详见第 17 条。</p>
   <p><strong>Credits / 防滥用：</strong>服务端可能处理会话标识、您选择的 AI 功能类型（不同功能消耗不同额度）、重复请求指纹、速率限制所需摘要，以及与服务端额度账本相关的最小必要记录。</p>
   <p><strong>可选 BYOK（Bring Your Own Key，通常为开发或直连后备）：</strong>若您在应用中自行配置第三方 API 密钥（当前典型为 Google Gemini），请求路径可能<strong>由您的设备按配置直接</strong>发送至该第三方；请您阅读并遵守对应提供商条款与配额政策；若您向他人泄露密钥或因配置错误产生费用，运营者在适用法律允许范围内<strong>不承担责任</strong>。</p>
   <p><strong>重要：</strong>输出仅供教育、整理与就诊准备参考，<strong>不构成</strong>诊断、处方或急诊医疗建议。</p>
 
   <h3>5.6 云备份（可选；用户指定端点）</h3>
-  <p>若您启用云备份并配置 HTTPS 端点（例如您控制的存储或预签名 URL），应用可能上传<strong>加密备份快照</strong>。运营者未必长期托管您的远端副本；请您妥善保管 URL、凭证与加密材料。若后端提供对象存储相关的短期签名 URL 生成能力，仅在您启用并按产品设计使用时处理必要的技术参数。</p>
+  <p>若您启用云备份，请在<strong>应用设置</strong>中填写备份所用的 HTTPS 端点（例如您控制的存储或预签名 PUT/GET URL）；应用可能上传<strong>加密备份快照</strong>。若您的备份接口需要授权请求头，当前产品设计通常通过<strong>「通过 Apple 登录」</strong>取得的会话令牌由应用在设备侧用于备份请求（加密存储），<strong>无需</strong>您在界面单独输入令牌。运营者未必长期托管您的远端副本；请您妥善保管 URL、预签名链接有效期与加密材料。若后端提供对象存储相关的短期签名 URL 生成能力，仅在您启用并按产品设计使用时处理必要的技术参数。</p>
 
   <h2>6. 处理目的与法律依据（概要）</h2>
   <p>视司法辖区而定，合法性可能基于：履行合同/提供服务、正当利益（安全、防滥用、改进）、法律义务，或您对可选功能（例如提交邮箱、启用云端能力）的同意。我们不会藉「同意」捆绑与您的请求无关的处理。</p>
@@ -122,16 +130,17 @@
   <p>我们仅在实现目的所需期限内保留数据；社区内容在运营需要期间保存，除非您行使删除权且不与法律保留义务冲突。设备端数据主要由您控制卸载与清除；服务端会话与额度账本按最小必要原则保存。我们依托 TLS、访问控制与服务商安全措施；没有任何系统能保证绝对安全。请您妥善保管设备、系统密码与会话。</p>
 
   <h2>9. 跨境传输</h2>
-  <p>您的信息可能被托管于您居住地以外的服务器（取决于云服务提供商的数据中心与路由，包括 AWS、Google 及网站托管方）。我们会尽可能在可行范围内采取合同性与技术性保护措施；具体以相关服务商条款为准。</p>
+  <p>您的信息可能被托管于您居住地以外的服务器（取决于云服务提供商的数据中心与路由，包括 Google、AWS 及网站托管方）。我们会尽可能在可行范围内采取合同性与技术性保护措施；具体以相关服务商条款为准。</p>
 
   <h2>10. 第三方服务提供商（可能随版本更新）</h2>
-  <p>下列清单反映当前产品基线中<strong>可能出现</strong>的服务商；具体是否启用以您的部署与设备设置为准。</p>
+  <p>下列清单反映当前产品基线中<strong>可能出现</strong>的服务商；具体是否启用以您的部署与设备设置为准。<strong>路由顺序、模型版本与启用范围可能随产品更新而调整。</strong></p>
   <ul>
     <li><strong>网站：</strong>Vercel（托管与分析组件）；Supabase（数据库，若配置）；Cloudflare（Turnstile，若配置）。</li>
     <li><strong>Apple：</strong>App Store、StoreKit、「通过 Apple 登录」生态。</li>
-    <li><strong>云端 AI 推理（经运营者后端）：</strong><strong>Amazon Web Services — Amazon Bedrock</strong>（优先）；<strong>Google</strong>（例如 Gemini / Google AI 相关 API，作为服务端配置的后备路径）。</li>
+    <li><strong>云端 AI 推理（经运营者后端）：</strong><strong>Google</strong>（例如 Gemini / Google AI 相关 API，<strong>当前优先路径</strong>）；<strong>Amazon Web Services — Amazon Bedrock</strong>（作为服务端配置的<strong>后备</strong>路径）。</li>
     <li><strong>可选设备直连（BYOK）：</strong>Google（Gemini）— 仅在您于应用中自行配置密钥且启用相关路径时适用。</li>
     <li><strong>可选备份：</strong>兼容 S3 签名 URL 的云存储服务商（由您配置的目标决定）。</li>
+    <li><strong>后端托管：</strong>运营者用于承载 API 与 AI 路由的云托管平台（如 Render 等同类 PaaS）；具体提供方可能随部署变化。</li>
   </ul>
 
   <h2>11. 出售 / 共享（美国部分州隐私法语境）</h2>
@@ -151,21 +160,53 @@
 
   <h2>16. 责任限制（在适用法律允许范围内）</h2>
   <p>在适用法律允许的最大范围内，对于因第三方基础设施中断、不可抗力、您自身设备或网络问题、第三方密钥（BYOK）配置错误、您违反法律法规或本政策、或不可归责于运营者的其他事由而导致的损害，运营者不承担超出<strong>独立个人开发者合理可控范围</strong>的赔偿责任。这不影响适用法律下不得排除的消费者强制性权利。</p>
+    <h2>17. 试用阶段、AI 功能可用性与不可抗力（v2026-05-10 新增）</h2>
+  <ul>
+    <li><strong>云端 AI 处于试用 / 公测：</strong>云端 AI 相关功能（包括但不限于 AI 助手、就诊问题准备、报告解读辅助、症状摘要等）<strong>当前阶段可能随时调整、降级、暂停或下线</strong>，可能原因包括但不限于：第三方提供方（如 <strong>Google Gemini</strong>、<strong>AWS Amazon Bedrock</strong>）的服务变更、配额、限流、地域 / 合规调整、技术故障、网络中断、安全事件、防滥用机制触发，以及运营者为保障稳定性而进行的版本切换、密钥轮换或临时下线维护。</li>
+    <li><strong>非 AI 功能不受影响：</strong>除云端 AI 相关功能外，本应用的<strong>本地优先</strong>功能（家庭成员档案、医疗记录中心、设备本地 OCR、用药提醒与用药日志、症状追踪、症状趋势图、紧急卡片等）通常<strong>不依赖</strong>云端 AI 服务即可独立使用；偶发的网络或后端不可用<strong>不视为</strong>整个应用不可用。</li>
+    <li><strong>无可用性 SLA：</strong>运营者<strong>不就</strong> AI 功能在任意时间点的可用性、响应延迟、并发限制或与上次输出相同性<strong>作出任何承诺</strong>。任何因 AI 暂时不可用、降级、限流、Credit 扣减失败或输出差异给您带来的不便，<strong>在适用法律允许范围内不构成退款、补偿或赔偿事由</strong>；但本条<strong>不影响</strong>您依 Apple 规则及强制性消费者法享有的退款权。</li>
+    <li><strong>提示与告知：</strong>当云端 AI 不可用时，应用通常会在界面以提示文案告知（例如「云端解读暂不可用」「请稍后再试」）。建议您在 AI 输出明显不合常理或长时间无法获得响应时，<strong>停止依赖该输出做任何健康相关决定</strong>，并咨询合格医疗专业人员。</li>
+    <li><strong>不可抗力：</strong>对于因不可抗力（含但不限于自然灾害、战争、政府或监管机构指令、网络 / 电力 / 云服务大规模故障、第三方 API 突发变更或断供、生成式 AI 模型政策性下线等）导致的不能履行或延迟履行，运营者在适用法律允许范围内免责。</li>
+    <li><strong>过渡期与变更：</strong>运营者可在不事先通知的情况下，调整 AI 提供方、模型、路由顺序、单次最大长度、单功能 Credit 单价或限频策略；如发生<strong>重大不利变更</strong>，将在可行范围内以应用内或官网说明形式提示。本条所述「变更」<strong>不</strong>涉及对您个人信息处理范围的扩大；对个人信息处理范围的实质变更仍按第 18 条执行。</li>
+  </ul>
 
-  <h2>17. 政策变更</h2>
-  <p>我们可能更新本政策并在页顶更新生效日期。若变更实质影响您的权利，我们将采取合理方式提示；在法律要求时需取得同意的，我们将依法处理。</p>
+  <h2>18. 政策变更</h2>
+  <p>我们可能更新本政策并在页顶更新生效日期。若变更实质影响您的权利，我们将采取合理方式提示；在法律要求时需取得同意的，我们将依法处理。变更生效后，您继续使用本网站或应用即表示接受更新版本；如不接受，请停止使用并视情况撤回同意、行使删除/反对等权利。</p>
 
-  <h2>18. 联系我们</h2>
+  <h2>19. 政策解释（在合法限度内 / 独立开发者最终说明权，v2026-05-10 新增）</h2>
+  <p>在<strong>不损害</strong>您所在地不可剥夺的<strong>强制性消费者保护与个人信息 / 隐私法律</strong>（含但不限于 GDPR、CCPA/CPRA、英国 DPA、中国《个人信息保护法》《消费者权益保护法》及您所在地同类规则）、不与 <strong>Apple App Store 强制性政策</strong>冲突的前提下，运营者（独立个人开发者）就本政策条款保留<strong>合理的最终解释说明权</strong>，以便消除歧义、填补条款空白与统一执行口径。</p>
+  <p>该解释权<strong>明确不得</strong>用于以下情形：</p>
+  <ul>
+    <li>(a) 单方扩大运营者对个人信息的<strong>处理范围、目的或保存期限</strong>，或<strong>单方减损</strong>您依法享有的访问、更正、删除、限制处理、可携带性、撤回同意、反对自动化决策等不可剥夺权利；</li>
+    <li>(b) 排除或限制运营者对<strong>故意或重大过失、欺诈、人身伤害</strong>等依法不得排除之责任；</li>
+    <li>(c) 规避 Apple 媒体服务条款、App Store Connect「App 隐私」营养标签披露义务、Standard EULA、退款规则及 App Store 审核指南；</li>
+    <li>(d) 改变 Apple 作为支付与订阅处理方的角色，或剥夺您通过 Apple 渠道主张退款 / 申诉的权利；</li>
+    <li>(e) 为运营者免除<strong>法定通知义务</strong>（包括但不限于个人信息泄露通知、跨境传输告知、敏感信息单独同意等）。</li>
+  </ul>
+  <p>若您对运营者的解释存在异议，可<strong>先通过下方联系邮箱</strong>提出书面异议；运营者应在合理期间内回复。任何最终解释均不得违反本条所列禁止事项；与之相抵触的解释<strong>无效</strong>，相关条款应回归对您更有利的、依法可执行的解读。本条不限制您向监管机构投诉或寻求司法救济的权利。</p>
+
+  <h2>20. 联系我们</h2>
   <p><a href="mailto:hello@familymedvault.com">hello@familymedvault.com</a></p>
 
   <section class="en" lang="en">
     <h2>English summary (for international readers &amp; App Store)</h2>
-    <p><strong>Effective date:</strong> May 7, 2026.</p>
+    <p><strong>Version:</strong> v2026-05-10 ｜ <strong>Effective date:</strong> May 10, 2026. This version supersedes the v2026-05-07 version.</p>
+
+    <p><strong>Beta / Trial notice:</strong> The <strong>cloud AI assistant</strong> features in this app are currently in a <strong>trial / public beta</strong> phase and may be <strong>unstable or temporarily unavailable</strong> due to third-party generative-AI provider changes (e.g. Google Gemini, AWS Amazon Bedrock), quotas, network conditions, configuration switches or anti-abuse controls. <strong>All other (non-AI) local-first features</strong> &mdash; family member profiles, local medical records, on-device OCR, medication reminders, symptom tracking and trends, emergency cards &mdash; <strong>continue to operate independently</strong> and do not depend on cloud AI availability. See Section 17.</p>
+
     <p>FamilyMedVault is operated by an <strong>individual developer</strong>. This Privacy Policy describes processing for <strong>familymedvault.com</strong> (hosting/analytics via Vercel; optional community features via Supabase when configured; optional Cloudflare Turnstile; browser-local IDs; salted IP hashes for abuse prevention) and the <strong>FamilyMedVault iOS app</strong> (local-first health information you choose to store; Sign in with Apple; StoreKit subscriptions including renewal-window metadata used for AI Credits periods).</p>
-    <p><strong>Optional cloud AI:</strong> When you enable it and meet in-app consent requirements, limited prompts and summary-style context may be sent over TLS to the operator’s backend. The server typically calls <strong>AWS Amazon Bedrock</strong> first; if unavailable or not configured, it may fall back to <strong>Google generative AI (e.g., Gemini)</strong> as configured on the server. <strong>OpenAI is not used</strong> on the server in the current implementation.</p>
+
+    <p><strong>Optional cloud AI:</strong> When you enable it and meet in-app consent requirements, limited prompts and summary-style context may be sent over TLS to the operator&apos;s backend. The server typically calls <strong>Google generative AI (e.g., Gemini)</strong> first; if unavailable or not configured, it may fall back to <strong>AWS Amazon Bedrock</strong> as configured on the server. <strong>OpenAI is not used</strong> on the server in the current implementation. Routing order, models and providers may change at any time.</p>
+
     <p><strong>Optional BYOK (development / limited device-side fallback):</strong> If you configure your own API keys in the app (typically Gemini), requests may be sent directly from your device per your settings; you are responsible for provider terms, quotas, and key safety.</p>
-    <p><strong>Credits / anti-abuse</strong> records may be processed on the server as described above.</p>
-    <p><strong>Optional encrypted backups</strong> may be uploaded to HTTPS endpoints you specify. We do <strong>not</strong> use data collected here for cross-app / cross-site tracking for third-party behavioral advertising as commonly understood, and we do <strong>not sell</strong> personal information for money. Contact <a href="mailto:hello@familymedvault.com">hello@familymedvault.com</a> for privacy requests. AI outputs are informational only and not medical advice. Third-party services (Apple, AWS, Google, hosting providers, etc.) have their own policies.</p>
+
+    <p><strong>Credits / anti-abuse</strong> records may be processed on the server as described above. Unspent Credits that could not be consumed because cloud AI was temporarily unavailable are <strong>not deemed a loss</strong>; the operator will use commercially reasonable efforts to retain or carry over such Credits, without prejudice to your statutory consumer-law refund rights and Apple-managed refund pathways.</p>
+
+    <p><strong>Optional encrypted backups:</strong> You enter HTTPS endpoints in <strong>app Settings</strong> (e.g. presigned PUT/GET). If your endpoint requires authorization headers, the app typically uses the session from <strong>Sign in with Apple</strong> for backup requests (stored securely on-device)&mdash;there is <strong>no</strong> separate user-facing token field. We do <strong>not</strong> use data collected here for cross-app / cross-site tracking for third-party behavioral advertising as commonly understood, and we do <strong>not sell</strong> personal information for money. Contact <a href="mailto:hello@familymedvault.com">hello@familymedvault.com</a> for privacy requests. AI outputs are informational only and not medical advice. Third-party services (Apple, Google, AWS, hosting providers, etc.) have their own policies.</p>
+
+    <p><strong>No availability SLA on AI:</strong> The operator makes <strong>no guarantee</strong> regarding AI availability, latency, throughput, or output consistency. Inconvenience caused by AI outages, degradation, throttling, Credit-deduction failures, or output variance does <strong>not</strong>, to the maximum extent permitted by law, give rise to refund or compensation claims under this Policy &mdash; without prejudice to your statutory consumer rights and Apple-managed refund pathways.</p>
+
+    <p><strong>Final interpretation (within lawful limits):</strong> The individual developer reserves a reasonable right of final interpretation of this Privacy Policy <strong>only to resolve ambiguity or fill gaps</strong>, and <strong>not</strong> to (a) unilaterally expand processing scope, purposes or retention, or reduce your non-waivable data-protection rights (access, rectification, erasure, restriction, portability, withdrawal of consent, objection to automated decision-making, etc.); (b) exclude liability for personal injury, fraud, gross negligence or anything else not lawfully excludable; (c) circumvent Apple Media Services / App Privacy nutrition-label disclosure / Standard EULA / App Store rules; (d) impair your refund / dispute pathways with Apple; or (e) waive statutory notification duties (e.g. data-breach notification, cross-border transfer disclosure, separate consent for sensitive information). Any interpretation conflicting with these limits is void; the related clause shall be read in the manner most favorable to you that remains lawfully enforceable. Nothing here limits your right to complain to a supervisory authority or seek judicial remedies.</p>
   </section>
 </body>
 </html>
