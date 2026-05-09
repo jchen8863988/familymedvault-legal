@@ -112,7 +112,7 @@
   <p><strong>试用阶段下未消耗 Credits 的处理：</strong>由于第 17 条所述的 AI 功能试用属性，在云端 AI 暂时不可用期间您未消耗的 Credits<strong>不视为损失</strong>，运营者将<strong>在合理范围内</strong>设法保留或顺延（具体规则以应用内当时说明为准）。本声明不影响您依 Apple 规则及强制性消费者法享有的退款权利；订阅退款与账单争议请通过 Apple「设置 → Apple 账户 → 订阅」与 Apple 支持渠道办理。</p>
 
   <h3>5.5 云端 AI（可选；试用阶段；健康信息辅助场景）</h3>
-  <p>若您在设置中<strong>启用云端 AI</strong>、已满足应用内隐私/个性化相关同意要求并已登录，您的问题文本以及应用基于本地资料生成的<strong>摘要式上下文</strong>可能经 TLS 加密传输至<strong>运营者提供的后端服务</strong>（HTTPS）。后端按当前版本实现，<strong>优先调用 Google 生成式接口（例如 Gemini / Google AI 相关接口）</strong>；若该路径不可用或未配置，则可能<strong>按服务端配置</strong>使用 <strong>Amazon Web Services（AWS）Amazon Bedrock</strong> 作为<strong>后备</strong>路径。<strong>服务端当前实现不再使用 OpenAI 接口。</strong>具体路由顺序、模型与提供方<strong>可能随时调整</strong>，以部署环境与版本为准。云端 AI 可用性详见第 17 条。</p>
+  <p>若您在设置中<strong>启用云端 AI</strong>、已满足应用内隐私/个性化相关同意要求并已登录，您的问题文本以及应用基于本地资料生成的<strong>摘要式上下文</strong>可能经 TLS 加密传输至<strong>运营者提供的后端服务</strong>（HTTPS）。后端按当前版本实现，<strong>优先通过 Amazon Web Services（AWS）Amazon Bedrock 调用生成式模型</strong>（计费与可用性受 AWS 账户与模型开通策略约束）；若该路径不可用或未配置，则可能<strong>按服务端配置</strong>调用 <strong>Google</strong> 的生成式接口（例如 Gemini / Google AI 相关接口）作为<strong>后备</strong>路径。<strong>服务端当前实现不再使用 OpenAI 接口。</strong>具体路由顺序、模型与提供方<strong>可能随时调整</strong>，以部署环境与版本为准。云端 AI 可用性详见第 17 条。</p>
   <p><strong>Credits / 防滥用：</strong>服务端可能处理会话标识、您选择的 AI 功能类型（不同功能消耗不同额度）、重复请求指纹、速率限制所需摘要，以及与服务端额度账本相关的最小必要记录。</p>
   <p><strong>可选 BYOK（Bring Your Own Key，通常为开发或直连后备）：</strong>若您在应用中自行配置第三方 API 密钥（当前典型为 Google Gemini），请求路径可能<strong>由您的设备按配置直接</strong>发送至该第三方；请您阅读并遵守对应提供商条款与配额政策；若您向他人泄露密钥或因配置错误产生费用，运营者在适用法律允许范围内<strong>不承担责任</strong>。</p>
   <p><strong>重要：</strong>输出仅供教育、整理与就诊准备参考，<strong>不构成</strong>诊断、处方或急诊医疗建议。</p>
@@ -130,14 +130,14 @@
   <p>我们仅在实现目的所需期限内保留数据；社区内容在运营需要期间保存，除非您行使删除权且不与法律保留义务冲突。设备端数据主要由您控制卸载与清除；服务端会话与额度账本按最小必要原则保存。我们依托 TLS、访问控制与服务商安全措施；没有任何系统能保证绝对安全。请您妥善保管设备、系统密码与会话。</p>
 
   <h2>9. 跨境传输</h2>
-  <p>您的信息可能被托管于您居住地以外的服务器（取决于云服务提供商的数据中心与路由，包括 Google、AWS 及网站托管方）。我们会尽可能在可行范围内采取合同性与技术性保护措施；具体以相关服务商条款为准。</p>
+  <p>您的信息可能被托管于您居住地以外的服务器（取决于云服务提供商的数据中心与路由，包括 AWS、Google 及网站托管方）。我们会尽可能在可行范围内采取合同性与技术性保护措施；具体以相关服务商条款为准。</p>
 
   <h2>10. 第三方服务提供商（可能随版本更新）</h2>
   <p>下列清单反映当前产品基线中<strong>可能出现</strong>的服务商；具体是否启用以您的部署与设备设置为准。<strong>路由顺序、模型版本与启用范围可能随产品更新而调整。</strong></p>
   <ul>
     <li><strong>网站：</strong>Vercel（托管与分析组件）；Supabase（数据库，若配置）；Cloudflare（Turnstile，若配置）。</li>
     <li><strong>Apple：</strong>App Store、StoreKit、「通过 Apple 登录」生态。</li>
-    <li><strong>云端 AI 推理（经运营者后端）：</strong><strong>Google</strong>（例如 Gemini / Google AI 相关 API，<strong>当前优先路径</strong>）；<strong>Amazon Web Services — Amazon Bedrock</strong>（作为服务端配置的<strong>后备</strong>路径）。</li>
+    <li><strong>云端 AI 推理（经运营者后端）：</strong><strong>Amazon Web Services — Amazon Bedrock</strong>（<strong>当前优先路径</strong>，计费与可用性受 AWS 账户与模型开通策略约束）；<strong>Google</strong>（例如 Gemini / Google AI 相关 API，作为服务端配置的<strong>后备</strong>路径）。</li>
     <li><strong>可选设备直连（BYOK）：</strong>Google（Gemini）— 仅在您于应用中自行配置密钥且启用相关路径时适用。</li>
     <li><strong>可选备份：</strong>兼容 S3 签名 URL 的云存储服务商（由您配置的目标决定）。</li>
     <li><strong>后端托管：</strong>运营者用于承载 API 与 AI 路由的云托管平台（如 Render 等同类 PaaS）；具体提供方可能随部署变化。</li>
@@ -162,7 +162,7 @@
   <p>在适用法律允许的最大范围内，对于因第三方基础设施中断、不可抗力、您自身设备或网络问题、第三方密钥（BYOK）配置错误、您违反法律法规或本政策、或不可归责于运营者的其他事由而导致的损害，运营者不承担超出<strong>独立个人开发者合理可控范围</strong>的赔偿责任。这不影响适用法律下不得排除的消费者强制性权利。</p>
     <h2>17. 试用阶段、AI 功能可用性与不可抗力（v2026-05-10 新增）</h2>
   <ul>
-    <li><strong>云端 AI 处于试用 / 公测：</strong>云端 AI 相关功能（包括但不限于 AI 助手、就诊问题准备、报告解读辅助、症状摘要等）<strong>当前阶段可能随时调整、降级、暂停或下线</strong>，可能原因包括但不限于：第三方提供方（如 <strong>Google Gemini</strong>、<strong>AWS Amazon Bedrock</strong>）的服务变更、配额、限流、地域 / 合规调整、技术故障、网络中断、安全事件、防滥用机制触发，以及运营者为保障稳定性而进行的版本切换、密钥轮换或临时下线维护。</li>
+    <li><strong>云端 AI 处于试用 / 公测：</strong>云端 AI 相关功能（包括但不限于 AI 助手、就诊问题准备、报告解读辅助、症状摘要等）<strong>当前阶段可能随时调整、降级、暂停或下线</strong>，可能原因包括但不限于：第三方提供方（如 <strong>AWS Amazon Bedrock</strong>、<strong>Google Gemini</strong>）的服务变更、配额、限流、地域 / 合规调整、技术故障、网络中断、安全事件、防滥用机制触发，以及运营者为保障稳定性而进行的版本切换、密钥轮换或临时下线维护。</li>
     <li><strong>非 AI 功能不受影响：</strong>除云端 AI 相关功能外，本应用的<strong>本地优先</strong>功能（家庭成员档案、医疗记录中心、设备本地 OCR、用药提醒与用药日志、症状追踪、症状趋势图、紧急卡片等）通常<strong>不依赖</strong>云端 AI 服务即可独立使用；偶发的网络或后端不可用<strong>不视为</strong>整个应用不可用。</li>
     <li><strong>无可用性 SLA：</strong>运营者<strong>不就</strong> AI 功能在任意时间点的可用性、响应延迟、并发限制或与上次输出相同性<strong>作出任何承诺</strong>。任何因 AI 暂时不可用、降级、限流、Credit 扣减失败或输出差异给您带来的不便，<strong>在适用法律允许范围内不构成退款、补偿或赔偿事由</strong>；但本条<strong>不影响</strong>您依 Apple 规则及强制性消费者法享有的退款权。</li>
     <li><strong>提示与告知：</strong>当云端 AI 不可用时，应用通常会在界面以提示文案告知（例如「云端解读暂不可用」「请稍后再试」）。建议您在 AI 输出明显不合常理或长时间无法获得响应时，<strong>停止依赖该输出做任何健康相关决定</strong>，并咨询合格医疗专业人员。</li>
@@ -192,17 +192,17 @@
     <h2>English summary (for international readers &amp; App Store)</h2>
     <p><strong>Version:</strong> v2026-05-10 ｜ <strong>Effective date:</strong> May 10, 2026. This version supersedes the v2026-05-07 version.</p>
 
-    <p><strong>Beta / Trial notice:</strong> The <strong>cloud AI assistant</strong> features in this app are currently in a <strong>trial / public beta</strong> phase and may be <strong>unstable or temporarily unavailable</strong> due to third-party generative-AI provider changes (e.g. Google Gemini, AWS Amazon Bedrock), quotas, network conditions, configuration switches or anti-abuse controls. <strong>All other (non-AI) local-first features</strong> &mdash; family member profiles, local medical records, on-device OCR, medication reminders, symptom tracking and trends, emergency cards &mdash; <strong>continue to operate independently</strong> and do not depend on cloud AI availability. See Section 17.</p>
+    <p><strong>Beta / Trial notice:</strong> The <strong>cloud AI assistant</strong> features in this app are currently in a <strong>trial / public beta</strong> phase and may be <strong>unstable or temporarily unavailable</strong> due to third-party generative-AI provider changes (e.g. AWS Amazon Bedrock, Google Gemini), quotas, network conditions, configuration switches or anti-abuse controls. <strong>All other (non-AI) local-first features</strong> &mdash; family member profiles, local medical records, on-device OCR, medication reminders, symptom tracking and trends, emergency cards &mdash; <strong>continue to operate independently</strong> and do not depend on cloud AI availability. See Section 17.</p>
 
     <p>FamilyMedVault is operated by an <strong>individual developer</strong>. This Privacy Policy describes processing for <strong>familymedvault.com</strong> (hosting/analytics via Vercel; optional community features via Supabase when configured; optional Cloudflare Turnstile; browser-local IDs; salted IP hashes for abuse prevention) and the <strong>FamilyMedVault iOS app</strong> (local-first health information you choose to store; Sign in with Apple; StoreKit subscriptions including renewal-window metadata used for AI Credits periods).</p>
 
-    <p><strong>Optional cloud AI:</strong> When you enable it and meet in-app consent requirements, limited prompts and summary-style context may be sent over TLS to the operator&apos;s backend. The server typically calls <strong>Google generative AI (e.g., Gemini)</strong> first; if unavailable or not configured, it may fall back to <strong>AWS Amazon Bedrock</strong> as configured on the server. <strong>OpenAI is not used</strong> on the server in the current implementation. Routing order, models and providers may change at any time.</p>
+    <p><strong>Optional cloud AI:</strong> When you enable it and meet in-app consent requirements, limited prompts and summary-style context may be sent over TLS to the operator&apos;s backend. The server typically calls <strong>AWS Amazon Bedrock</strong> first; if unavailable or not configured, it may fall back to <strong>Google generative AI (e.g., Gemini)</strong> as configured on the server. <strong>OpenAI is not used</strong> on the server in the current implementation. Routing order, models and providers may change at any time.</p>
 
     <p><strong>Optional BYOK (development / limited device-side fallback):</strong> If you configure your own API keys in the app (typically Gemini), requests may be sent directly from your device per your settings; you are responsible for provider terms, quotas, and key safety.</p>
 
     <p><strong>Credits / anti-abuse</strong> records may be processed on the server as described above. Unspent Credits that could not be consumed because cloud AI was temporarily unavailable are <strong>not deemed a loss</strong>; the operator will use commercially reasonable efforts to retain or carry over such Credits, without prejudice to your statutory consumer-law refund rights and Apple-managed refund pathways.</p>
 
-    <p><strong>Optional encrypted backups:</strong> You enter HTTPS endpoints in <strong>app Settings</strong> (e.g. presigned PUT/GET). If your endpoint requires authorization headers, the app typically uses the session from <strong>Sign in with Apple</strong> for backup requests (stored securely on-device)&mdash;there is <strong>no</strong> separate user-facing token field. We do <strong>not</strong> use data collected here for cross-app / cross-site tracking for third-party behavioral advertising as commonly understood, and we do <strong>not sell</strong> personal information for money. Contact <a href="mailto:hello@familymedvault.com">hello@familymedvault.com</a> for privacy requests. AI outputs are informational only and not medical advice. Third-party services (Apple, Google, AWS, hosting providers, etc.) have their own policies.</p>
+    <p><strong>Optional encrypted backups:</strong> You enter HTTPS endpoints in <strong>app Settings</strong> (e.g. presigned PUT/GET). If your endpoint requires authorization headers, the app typically uses the session from <strong>Sign in with Apple</strong> for backup requests (stored securely on-device)&mdash;there is <strong>no</strong> separate user-facing token field. We do <strong>not</strong> use data collected here for cross-app / cross-site tracking for third-party behavioral advertising as commonly understood, and we do <strong>not sell</strong> personal information for money. Contact <a href="mailto:hello@familymedvault.com">hello@familymedvault.com</a> for privacy requests. AI outputs are informational only and not medical advice. Third-party services (Apple, AWS, Google, hosting providers, etc.) have their own policies.</p>
 
     <p><strong>No availability SLA on AI:</strong> The operator makes <strong>no guarantee</strong> regarding AI availability, latency, throughput, or output consistency. Inconvenience caused by AI outages, degradation, throttling, Credit-deduction failures, or output variance does <strong>not</strong>, to the maximum extent permitted by law, give rise to refund or compensation claims under this Policy &mdash; without prejudice to your statutory consumer rights and Apple-managed refund pathways.</p>
 
