@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="FamilyMedVault 最终用户许可协议（EULA）— App Store 分发（独立开发者）。" />
+  <meta name="description" content="FamilyMedVault 最终用户许可协议（EULA）— App Store 分发（独立开发者）。版本 v2026-05-10。" />
   <title>最终用户许可协议（EULA）— FamilyMedVault</title>
   <style>
     :root { color-scheme: light dark; }
@@ -15,6 +15,7 @@
     ul { padding-left: 1.25rem; }
     .meta { color: #666; font-size: 0.9rem; margin-bottom: 1.5rem; }
     .notice { border-left: 4px solid #444; padding: 0.75rem 1rem; margin: 1rem 0; background: rgba(128,128,128,.08); }
+    .notice.beta { border-left-color: #c08400; background: rgba(192,132,0,.10); }
     .en { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 2px solid rgba(128,128,128,.35); }
     a { color: inherit; }
   </style>
@@ -22,11 +23,15 @@
 <body>
   <header>
     <h1>最终用户许可协议（EULA）— FamilyMedVault</h1>
-    <p class="meta"><strong>生效日期：</strong>2026 年 5 月 7 日（UTC 日历日；强制性法律另有规定的从其规定）</p>
+    <p class="meta"><strong>版本：</strong>v2026-05-10 ｜ <strong>生效日期：</strong>2026 年 5 月 10 日（UTC 日历日；强制性法律另有规定的从其规定）｜ 本版本取代 v2026-05-07 版本。</p>
   </header>
 
   <div class="notice">
     <p><strong>重要：</strong>本协议旨在清晰界定许可范围、可选网络功能与风险分配；<strong>不构成</strong>律师出具的正式法律意见书。若强制性法律、消费者权利保护规则或 Apple 对 App Store 软件的强制性规则与本协议冲突，在适用法律允许范围内以对您<strong>更有利的强制性规定</strong>为准。许可方为<strong>独立个人开发者</strong>；本软件按「现状」提供。</p>
+  </div>
+
+  <div class="notice beta">
+    <p><strong>当前试用阶段提示（v2026-05-10 新增）：</strong>本软件中的<strong>云端 AI 助手</strong>等智能功能<strong>当前处于试用 / 公开测试阶段</strong>，可能因第三方生成式 AI 提供方变更、配额限流、网络波动、配置切换或防滥用措施而<strong>不稳定或暂时不可用</strong>。<strong>其余非 AI 功能</strong>（家庭成员管理、本地病历整理、用药提醒、症状记录、本地 OCR 等本地优先功能）<strong>通常可独立、正常使用</strong>，不依赖云端 AI 是否可用。详见第 7 条。</p>
   </div>
 
   <h2>1. 协议双方</h2>
@@ -64,42 +69,52 @@
     <li>我们可能依据 StoreKit 报告的权益状态、产品标识符及您在应用内同步的订阅区间元数据（例如用于 AI Credits 周期对齐的时间戳）启用或限制功能；该等处理亦受《隐私政策》约束。</li>
     <li>订阅不构成我们对某一具体功能组合或未来版本的<strong>永久、无条件承诺</strong>；我们可能依法依合理商业考量调整功能、文案或技术实现；若变更对您产生重大不利影响，我们将在可行范围内以应用内或官网合理方式提示（强制性法律要求另行征得同意的除外）。</li>
     <li><strong>免费试用与促销</strong>（如有）：以 App Store 当时展示及 Apple 规则为准。</li>
+    <li><strong>云端 AI 相关订阅 / 积分：</strong>由于第 7 条所述的 AI 功能试用属性，<strong>已发放但因 AI 暂时不可用而未消耗的 Credits 不视为损失</strong>，许可方将<strong>在合理范围内</strong>设法保留或顺延（具体规则以应用内当时说明为准）；若您对此不接受，请通过 Apple 渠道主张订阅退款，本协议<strong>不限制</strong>您依 Apple 规则及强制性消费者法享有的退款权。</li>
   </ul>
     <h2>6. 功能说明与当前产品基线（以实际版本为准）</h2>
   <p>下列描述用于界定合理预期；具体 UI、开关与限制以您设备上安装的版本为准。</p>
   <ul>
     <li><strong>本地优先：</strong>您录入的家庭与健康相关信息默认存储于您的设备；除非您启用下文网络相关功能，许可方不应远程访问您设备上的本地数据库内容。</li>
     <li><strong>通过 Apple 登录（可选）：</strong>用于会话与可选云端能力；处理细节见《隐私政策》。</li>
-    <li><strong>云端 AI（可选）：</strong>在您的同意、登录状态与网络条件允许时，您的问题及摘要式上下文可经加密传输至运营者提供的<strong>后端服务</strong>。服务端可能调用<strong>第三方生成式 AI</strong>；当前技术实现中通常<strong>优先使用 Amazon Web Services（AWS）Amazon Bedrock</strong>；若该路径不可用或未配置，则可能<strong>按服务端配置</strong>使用 <strong>Google</strong> 相关生成式接口（例如 Gemini / Google AI）作为<strong>后备</strong>。<strong>服务端当前实现不使用 OpenAI 接口。</strong>输出仅供辅助整理与备忘，不构成诊疗意见。</li>
+    <li><strong>云端 AI（可选，<u>试用阶段</u>）：</strong>在您的同意、登录状态与网络条件允许时，您的问题及摘要式上下文可经加密传输至运营者提供的<strong>后端服务</strong>。服务端可能调用<strong>第三方生成式 AI</strong>；当前技术实现中通常<strong>优先使用 Google 生成式接口（如 Gemini / Google AI）</strong>；若该路径不可用或未配置，则可能<strong>按服务端配置</strong>使用 <strong>Amazon Web Services（AWS）Amazon Bedrock</strong> 作为<strong>后备</strong>。<strong>服务端当前实现不使用 OpenAI 接口。</strong>该路由顺序、模型与提供方可能随时调整。输出仅供辅助整理与备忘，<strong>不构成诊疗意见</strong>。本功能稳定性详见第 7 条。</li>
     <li><strong>AI Credits：</strong>云端 AI 可能按功能类型消耗 Credits；额度通常按订阅周期或规则重置且<strong>非滚存</strong>（以应用内说明为准）；服务端可进行公平使用与防滥用计量。</li>
     <li><strong>可选 BYOK（自备第三方 API 密钥）：</strong>若应用允许您自行填写第三方密钥（当前典型为 Google Gemini，用于开发、测试或设备侧后备路径），相关调用受该第三方条款约束；因密钥保管不善、配置错误或超额计费产生的风险由您自行承担（在适用法律允许范围内）。</li>
-    <li><strong>可选云备份：</strong>若您启用并向<strong>您指定或控制的 HTTPS 端点</strong>上传加密备份，请您妥善保管端点、凭证与加密材料；许可方未必长期托管您的副本。</li>
+    <li><strong>可选云备份：</strong>若您启用，请在<strong>应用设置</strong>中填写<strong>您指定或控制的 HTTPS 端点</strong>（例如预签名存储 URL）以上传加密备份；若接口需要授权请求头，当前版本通常通过<strong>「通过 Apple 登录」</strong>会话处理，无需单独输入令牌。请您妥善保管端点与加密材料；许可方未必长期托管您的副本。</li>
     <li><strong>网站 / 社区：</strong>若您使用 familymedvault.com 相关社区或表单，另受该站条款与《隐私政策》约束。</li>
   </ul>
 
-  <h2>7. 非医疗设备 / 非专业医疗建议</h2>
+  <h2>7. 试用阶段、AI 功能可用性与不可抗力（v2026-05-10 新增）</h2>
+  <ul>
+    <li><strong>云端 AI 处于试用 / 公测：</strong>云端 AI 相关功能（包括但不限于 AI 助手、就诊问题准备、报告解读辅助、症状摘要等）<strong>当前阶段可能随时调整、降级、暂停或下线</strong>，可能原因包括但不限于：第三方提供方（如 <strong>Google Gemini</strong>、<strong>AWS Amazon Bedrock</strong>）的服务变更、配额、限流、地域 / 合规调整、技术故障、网络中断、安全事件、防滥用机制触发，以及许可方为保障稳定性而进行的版本切换、密钥轮换或临时下线维护。</li>
+    <li><strong>非 AI 功能不受影响：</strong>除云端 AI 相关功能外，本软件的<strong>本地优先</strong>功能（家庭成员档案、医疗记录中心、设备本地 OCR、用药提醒与用药日志、症状追踪、症状趋势图等）通常<strong>不依赖</strong>云端 AI 服务即可独立使用；偶发的网络或后端不可用<strong>不视为</strong>整个软件不可用。</li>
+    <li><strong>无可用性 SLA：</strong>许可方<strong>不就</strong> AI 功能在任意时间点的可用性、响应延迟、并发限制或与上次输出相同性<strong>作出任何承诺</strong>。任何因 AI 暂时不可用、降级、限流、Credit 扣减失败或输出差异给您带来的不便，<strong>在适用法律允许范围内不构成退款、补偿或赔偿事由</strong>；但本条<strong>不影响</strong>您依 Apple 规则及强制性消费者法享有的退款权。</li>
+    <li><strong>提示与告知：</strong>当云端 AI 不可用时，应用通常会在界面以提示文案告知（例如「云端解读暂不可用」「请稍后再试」）。建议您在 AI 输出明显不合常理或长时间无法获得响应时，<strong>停止依赖该输出做任何健康相关决定</strong>，并咨询合格医疗专业人员。</li>
+    <li><strong>不可抗力：</strong>对于因不可抗力（含但不限于自然灾害、战争、政府或监管机构指令、网络 / 电力 / 云服务大规模故障、第三方 API 突发变更或断供、生成式 AI 模型政策性下线等）导致的不能履行或延迟履行，许可方在适用法律允许范围内免责。</li>
+    <li><strong>过渡期与变更：</strong>许可方可在不事先通知的情况下，调整 AI 提供方、模型、路由顺序、单次最大长度、单功能 Credit 单价或限频策略；如发生<strong>重大不利变更</strong>，将在可行范围内以应用内或官网说明形式提示。</li>
+  </ul>
+
+  <h2>8. 非医疗设备 / 非专业医疗建议</h2>
   <p>本软件<strong>并非</strong>医疗器械，亦<strong>不提供</strong>诊断、治疗、处方、用药调整或急诊医疗服务。任何 AI 生成内容、摘要或提示仅为信息与就诊准备辅助，<strong>可能不完整、过时或错误</strong>。紧急健康状况请拨打当地急救电话或立即前往医疗机构。</p>
 
-  <h2>8. AI 输出免责</h2>
+  <h2>9. AI 输出免责</h2>
   <p>您对基于 AI 输出所作的任何决定自行承担责任。在适用法律允许的最大范围内，我们<strong>不对</strong> AI 输出的准确性、完整性、时效性或适用于特定目的作出任何明示或默示保证。</p>
-
-  <h2>9. 用户内容与行为规范</h2>
+    <h2>10. 用户内容与行为规范</h2>
   <ul>
     <li>您对输入本软件的内容拥有合法权利或已取得必要授权；您声明输入内容不侵害第三方知识产权、隐私或其他权利。</li>
     <li>您不得上传恶意代码，不得利用本软件从事非法采集、骚扰、诽谤或传播违法信息等行为。</li>
     <li>若您使用公开社区等功能，还须遵守相应社区规则；我们可能依法移除违规内容或中止互动功能。</li>
   </ul>
 
-  <h2>10. 隐私</h2>
+  <h2>11. 隐私</h2>
   <p>个人信息处理规则以我们在 App Store「隐私政策」链接及官网上发布的《隐私政策》为准（当前示例 URL：<a href="https://jchen8863988.github.io/familymedvault-legal/privacy.html">https://jchen8863988.github.io/familymedvault-legal/privacy.html</a>；若您日后变更托管地址，以 App Store 公示为准）。本协议不改变许可方在隐私法下的告知义务，亦不构成对数据处理范围的扩大授权。</p>
 
-  <h2>11. 第三方服务与可用性</h2>
-  <p>本软件可能依赖 Apple、网络运营商、托管商、<strong>AWS（含 Amazon Bedrock）</strong>、<strong>Google（含 Gemini 等生成式接口）</strong>、对象存储服务商等第三方。第三方服务的可用性、费率、接口变更与安全事件由其各自条款约束；在适用法律允许范围内，我们<strong>不对第三方中断、变更或终止承担责任</strong>，亦不对您与第三方之间的争议承担责任。</p>
+  <h2>12. 第三方服务与可用性</h2>
+  <p>本软件可能依赖 Apple、网络运营商、托管商、<strong>Google（含 Gemini 等生成式接口）</strong>、<strong>AWS（含 Amazon Bedrock）</strong>、对象存储服务商等第三方。第三方服务的可用性、费率、接口变更与安全事件由其各自条款约束；在适用法律允许范围内，我们<strong>不对第三方中断、变更或终止承担责任</strong>，亦不对您与第三方之间的争议承担责任。</p>
 
-  <h2>12. 免责声明（「现状」提供）</h2>
+  <h2>13. 免责声明（「现状」提供）</h2>
   <p>在适用法律允许的最大范围内，本软件按「现状」及「可用」基础提供，我们<strong>不作任何明示或默示担保</strong>，包括但不限于对正确性、完整性、不间断可用、无错误、无病毒、适用于特定目的或非侵权的担保。某些司法辖区不允许排除默示担保，则在该辖区内以法律允许的最低限度为准。</p>
 
-  <h2>13. 责任限制（独立开发者）</h2>
+  <h2>14. 责任限制（独立开发者）</h2>
   <p>在适用法律允许的最大范围内：</p>
   <ul>
     <li>对于因使用或无法使用本软件而产生的<strong>间接损害、附带损害、后果性损害、预期利润损失、业务中断或数据丢失</strong>，我们不承担责任；若司法辖区不允许前述完全排除，则以该辖区允许的最大限度限制为准。</li>
@@ -107,38 +122,63 @@
     <li>若您对风险敏感或需更高保障，请在使用前评估是否适合依赖本软件处理重要健康决策；您应优先依赖合格医疗专业人员。</li>
   </ul>
 
-  <h2>14. 赔偿（在合法限度内）</h2>
+  <h2>15. 赔偿（在合法限度内）</h2>
   <p>因您违反本协议、违反适用法律或侵害第三方权利而导致针对许可方提出的<strong>合理直接索赔</strong>，在适用法律允许范围内，您同意为许可方抗辩并使许可方免于承担<strong>最终经司法机关或仲裁认定且与您的过错相称的</strong>赔偿责任。本条款不视为要求您承担明显超出您过错范围或与损害无因果关系的费用。</p>
-    <h2>15. 终止</h2>
+
+  <h2>16. 终止</h2>
   <ul>
     <li>您可随时停止使用并卸载本软件；已支付的订阅安排仍受 Apple 规则约束。</li>
     <li>若您重大违约、侵害第三方权利或法律法规要求，我们可能中止或终止许可。</li>
     <li>终止后，您必须停止使用并销毁本软件副本（适用法律允许的设备备份除外）。</li>
   </ul>
 
-  <h2>16. 适用法律、强制性消费者权利与争议（概要）</h2>
+  <h2>17. 适用法律、强制性消费者权利与争议（概要）</h2>
   <p>本协议的解释应<strong>优先尊重您所在地的强制性消费者保护规则</strong>。除非强制性法律另行指定管辖，争议解决程序依适用法律确定；欧盟等地区消费者可能享有在<strong>居住国</strong>法院起诉的权利。若您是商业用户或不受强制性消费者规则保护的主体，争议解决方式与管辖可在适用法律允许范围内另行适用合同条款 —— 但不减少对您所在地不可剥夺的消费者权利的效力。</p>
 
-  <h2>17. 出口合规与制裁</h2>
+  <h2>18. 出口合规与制裁</h2>
   <p>您声明您并非位于适用法律禁止接收或使用本软件的受限主体或受限地区用户。您不得违反出口管制、制裁或技术转让法律法规使用、出口或再出口本软件。</p>
 
-  <h2>18. 协议变更</h2>
+  <h2>19. 协议变更</h2>
   <p>我们可能更新本协议并在官网展示更新版本及生效日期。在法律要求或变更<strong>实质减损</strong>您权利的情况下，我们将采取合理方式提示；在适用法律允许的前提下，您在更新生效后继续使用可能构成对更新版本的接受。若您不同意更新版本，请停止使用并卸载本软件。</p>
 
-  <h2>19. 可分割性</h2>
+  <h2>20. 可分割性</h2>
   <p>若本协议某条款被有管辖权的机关认定为无效或不可执行，其余条款在最大可执行范围内继续有效。</p>
+    <h2>21. 协议解释（在合法限度内 / 独立开发者最终说明权）</h2>
+  <p>在<strong>不损害</strong>您所在地不可剥夺的<strong>强制性消费者保护规则</strong>、不与 <strong>Apple App Store 强制性政策</strong>冲突的前提下，许可方（独立个人开发者）就本协议条款保留<strong>合理的最终解释说明权</strong>，以便消除歧义、填补条款空白与统一执行口径。</p>
+  <p>该解释权<strong>明确不得</strong>用于以下情形：</p>
+  <ul>
+    <li>(a) 单方扩大许可方权利或<strong>单方减损</strong>您依法享有的不可剥夺权利（含中国《消费者权益保护法》、欧盟消费者法及您所在地同类规则项下的权利）；</li>
+    <li>(b) 排除或限制许可方对<strong>人身伤害、欺诈、故意或重大过失</strong>等依法不得排除之责任；</li>
+    <li>(c) 规避 Apple 媒体服务条款、Standard EULA、退款规则及 App Store 审核指南；</li>
+    <li>(d) 改变 Apple 作为支付与订阅处理方的角色，或剥夺您通过 Apple 渠道主张退款 / 申诉的权利。</li>
+  </ul>
+  <p>若您对许可方的解释存在异议，可<strong>先通过下方联系邮箱</strong>提出书面异议；许可方应在合理期间内回复。任何最终解释均不得违反本条所列禁止事项；与之相抵触的解释<strong>无效</strong>，相关条款应回归对您更有利的、依法可执行的解读。</p>
 
-  <h2>20. 联系我们</h2>
+  <h2>22. 联系我们</h2>
   <p><a href="mailto:hello@familymedvault.com">hello@familymedvault.com</a></p>
 
   <section class="en" lang="en">
     <h2>English summary (for international readers &amp; App Store)</h2>
-    <p><strong>Effective date:</strong> May 7, 2026.</p>
+    <p><strong>Version:</strong> v2026-05-10 ｜ <strong>Effective date:</strong> May 10, 2026. This version supersedes the v2026-05-07 version.</p>
+
+    <p><strong>Beta / Trial notice:</strong> The <strong>cloud AI assistant</strong> features in this app are currently in a <strong>trial / public beta</strong> phase and may be <strong>unstable or temporarily unavailable</strong> due to third-party generative-AI provider changes (e.g. Google Gemini, AWS Amazon Bedrock), quotas, network conditions, configuration switches or anti-abuse controls. <strong>All other (non-AI) local-first features</strong> &mdash; family member profiles, local medical records, on-device OCR, medication reminders, symptom tracking and trends &mdash; <strong>continue to operate independently</strong> and do not depend on cloud AI availability. See Section 7.</p>
+
     <p>This End User License Agreement (&quot;EULA&quot;) governs your use of the <strong>FamilyMedVault</strong> iOS application (including compatible iPad distribution where offered). The application is <strong>licensed, not sold</strong>, by an <strong>individual developer</strong>.</p>
+
     <p>If you obtained the app from the <strong>Apple App Store</strong>, <strong>Apple is not a party</strong> to this EULA except as required by Apple policies (e.g., App Store, payments, Standard Licensed Application terms where applicable). Apple has <strong>no warranty obligation</strong> for the Licensed Application as between you and the developer. You must comply with applicable Apple terms, including App Store rules and subscription management through your Apple ID.</p>
-    <p><strong>In‑App Purchases &amp; subscriptions</strong> are processed by <strong>Apple</strong>. Pricing, renewal, cancellation, and refunds follow Apple&apos;s rules. Feature access may depend on StoreKit-reported entitlements and subscription-period metadata used for <strong>AI Credits</strong> alignment.</p>
-    <p><strong>Optional cloud AI:</strong> When enabled, limited prompts and summary context may be sent over TLS to the operator&apos;s backend. Server-side AI typically calls <strong>AWS Amazon Bedrock</strong> first; if unavailable or not configured, it may fall back to <strong>Google generative AI (e.g., Gemini)</strong> as configured. <strong>OpenAI is not used</strong> on the server in the current implementation. Outputs are <strong>informational only</strong>, not medical advice. <strong>Optional BYOK keys</strong> (typically Gemini for device-side paths) are at your risk.</p>
-    <p>The app is <strong>not a medical device</strong>. To the maximum extent permitted by law, the app is provided <strong>&quot;as is&quot;</strong>; our aggregate liability is <strong>limited</strong> as described in Section 13 (typically to subscription fees paid in the prior 12 months, or USD 50 if none). We do <strong>not</strong> guarantee uninterrupted or error-free operation. Privacy practices are in our <strong>Privacy Policy</strong> linked in App Store Connect.</p>
+
+    <p><strong>In‑App Purchases &amp; subscriptions</strong> are processed by <strong>Apple</strong>. Pricing, renewal, cancellation, and refunds follow Apple&apos;s rules. Feature access may depend on StoreKit-reported entitlements and subscription-period metadata used for <strong>AI Credits</strong> alignment. Unspent Credits that could not be consumed because cloud AI was temporarily unavailable are <strong>not deemed a loss</strong>; the developer will use commercially reasonable efforts to retain or carry over such Credits, but you retain your right to seek a refund through Apple under Apple&apos;s rules.</p>
+
+    <p><strong>Optional cloud AI:</strong> When enabled, limited prompts and summary context may be sent over TLS to the operator&apos;s backend. Server-side AI typically calls <strong>Google generative AI (e.g., Gemini)</strong> first; if unavailable or not configured, it may fall back to <strong>AWS Amazon Bedrock</strong> as configured. <strong>OpenAI is not used</strong> on the server in the current implementation. Routing order, models and providers may change at any time. Outputs are <strong>informational only</strong>, not medical advice. <strong>Optional BYOK keys</strong> (typically Gemini for device-side paths) are at your risk.</p>
+
+    <p><strong>No availability SLA on AI:</strong> The developer makes <strong>no guarantee</strong> regarding AI availability, latency, throughput, or output consistency. Inconvenience caused by AI outages, degradation, throttling, Credit-deduction failures, or output variance does <strong>not</strong>, to the maximum extent permitted by law, give rise to refund or compensation claims under this EULA &mdash; without prejudice to your statutory consumer rights and Apple-managed refund pathways.</p>
+
+    <p><strong>Optional cloud backup:</strong> You may enter HTTPS endpoints in <strong>Settings</strong> for encrypted snapshots (e.g. presigned URLs). Backup authorization typically uses your <strong>Sign in with Apple</strong> session; there is no separate in-app token entry.</p>
+
+    <p>The app is <strong>not a medical device</strong>. To the maximum extent permitted by law, the app is provided <strong>&quot;as is&quot;</strong>; our aggregate liability is <strong>limited</strong> as described in Section 14 (typically to subscription fees paid in the prior 12 months, or USD 50 if none). We do <strong>not</strong> guarantee uninterrupted or error-free operation. Privacy practices are in our <strong>Privacy Policy</strong> linked in App Store Connect.</p>
+
+    <p><strong>Final interpretation (within lawful limits):</strong> The individual developer reserves a reasonable right of final interpretation of this EULA <strong>only to resolve ambiguity or fill gaps</strong>, and <strong>not</strong> to (a) unilaterally expand the developer&apos;s rights or reduce your non-waivable consumer rights, (b) exclude liability for personal injury, fraud, gross negligence or anything else not lawfully excludable, (c) circumvent Apple Media Services / Standard EULA / App Store rules, or (d) impair your refund / dispute pathways with Apple. Any interpretation conflicting with these limits is void; the related clause shall be read in the manner most favorable to you that remains lawfully enforceable.</p>
+
     <p><strong>Contact:</strong> <a href="mailto:hello@familymedvault.com">hello@familymedvault.com</a></p>
   </section>
 </body>
