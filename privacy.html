@@ -55,6 +55,7 @@
   <h2>4. 保存在设备上的信息</h2>
   <p>您主动录入或导入的家庭成员、医疗记录、用药与提醒、预约、转诊、症状、紧急卡片，以及应用锁、语言、主题和隐私同意，保存在这台设备上（含系统提供的安全存储适用部分）。用途仅限于向您提供整理、提醒、筛选、导出和删除。</p>
   <p>您可在「设置」中导出本机数据（JSON 和/或 PDF，以当时界面为准），也可以删除本机数据。导出的文件由您自己决定是否分享；我们不接收该副本。</p>
+  <p>卸载、更换设备或设备丢失后，记录只留在原来的那台设备上。开发者无法远程找回。请在卸载或换机前自行导出。</p>
 
   <h2>5. 系统权限</h2>
   <p>仅在您使用对应功能时，应用才请求通知、相册、相机、文件、日历或生物识别等权限。拒绝某项权限通常只影响该功能。权限说明以系统弹窗和当前版本为准。</p>
@@ -104,7 +105,7 @@
   <section class="en" lang="en">
     <h2>English summary</h2>
     <p><strong>Version:</strong> v2026-11-09. This version supersedes v2026-05-10.</p>
-    <p>FamilyMedVault is operated by an individual developer. Health records you enter stay on your device.</p>
+    <p>FamilyMedVault is operated by an individual developer. Health records you enter stay on your device. After you uninstall the app, switch devices, or lose the device, those records remain only on that device. The developer cannot recover them remotely. Export a copy in Settings before you uninstall or change devices.</p>
     <p>Subscriptions are processed by <strong>Apple StoreKit</strong> on the device. We do not receive your card number.</p>
     <p><strong>On-device assistant</strong> (free: visit prep, lab explanation, medical summary) does not send content to a model provider. <strong>Long-chart analysis</strong> and the <strong>AI Health Assistant switch</strong> require Premium or Family+. When that switch is on, your question and the local context needed to answer it are sent over HTTPS <strong>directly from the device to OpenAI</strong> (currently <strong>gpt-6-luna</strong>, which may change in a later build). The API credential is included by the developer. OpenAI processes that content under its own terms and may do so outside your country. Turning the switch off stops those transmissions. Outputs are not medical advice.</p>
     <p>Photo text recognition and emergency-card PDFs run on the device for eligible subscribers. Optional calendar sync writes to the device calendar; any further sync to iCloud or another account is performed by iOS and that account provider, not by us.</p>
